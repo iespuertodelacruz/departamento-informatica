@@ -3,7 +3,7 @@
 
 | Parámetro   | Valor |
 | ----------- | ----- |
-| Responsable | Centro |
+| Responsable | MEDUSA |
 | Uso         | Todo el centro |
 | Cantidad    | 31    |
 | Adquisición | ? |
@@ -17,10 +17,11 @@
 
 | Hardware | Descripción |
 | -------- | -------------- |
-| CPU      |
-| RAM      | GB |
-| Disco    | GB |
-| T Red    | |
+| CPU      | ? 
+| RAM      | ? GB |
+| Disco    | ? GB |
+| T Red    | ? |
+| Monitor  | ? |
 
 ---
 
@@ -28,3 +29,6 @@
 
 | Software | Descripción |
 | -------- | ----------- |
+| SSOO     | Windows     |
+
+* Equipos bajo un dominio MEDUSA.
