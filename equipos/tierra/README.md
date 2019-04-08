@@ -3,7 +3,9 @@
 
 | Parámetro | Valor |
 | --------- | ----- |
-| Cantidad  | ? |
+| Responsable | Departamento de Informática |
+| Uso actual  | 2ASIR y 2DAW |
+| Cantidad    | ? |
 | Adquisición | ? |
 | Comprado en | ? |
 
