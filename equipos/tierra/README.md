@@ -21,6 +21,7 @@
 | Disco 1  | SSH 128 GB |
 | Disco 2  | HDD 1 TB |
 | T Red    | |
+| Monitor  | |
 
 ---
 
