@@ -1,14 +1,15 @@
 
-# Equipos MARTE
+# Equipos TIERRA
 
 | Parámetro | Valor |
 | --------- | ----- |
 | Responsable | Departamento de Informática |
-| Uso actual  | 2ASIR y 2DAW |
-| Cantidad    | ? |
+| Uso actual  | 1ASIR y 1DAW |
+| Cantidad    | 30 |
 | Adquisición | ? |
 | Comprado en | ? |
 
+> NOTA: Como uno de los equipos lo usa el profesor, se ha incluido otro equipo (PC01) con características diferentes.
 ---
 
 # Hardware
@@ -27,3 +28,22 @@
 
 | Software | Descripción |
 | -------- | ----------- |
+| SSOO     | Xubuntu ??? |
+| italc    | Monitorización |
+
+* Consultar script de instalación para ver el detalle del software instalado.
+
+---
+
+# Usuarios
+
+| Nombre   | Descripción |
+| -------- | ----------- |
+| asir     | Para usar en el turno de mañana por los alumnos y profesores |
+| daw      | Para usar en el turno de tarde por los alumnos y profesores |
+| super    | Sólo para tareas del sistema |
+| root     | Sólo para tareas del sistema |
+
+---
+
+# Particiones
