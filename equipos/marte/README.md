@@ -1,24 +1,27 @@
 
 # Equipos MARTE
 
-30 PC's entregados por la consejería a finales del curso 201718.
+
+| Parámetro | Valor |
+| --------- | ----- |
+| Responsable | Departamento de Informática |
+| Uso actual  | 2ASIR y 2DAW |
+| Cantidad    | 30 |
+| Adquisición | Finales del curso 201718 |
+| Comprado en | Entregados por la consejería |
 
 ---
 
 # Hardware
 
-Los equipos MARTE tienen las siguientes características.
-* Memoria: 16 GB RAM
-* CPU:
-* Disco:
-    * 1 disco SSH 128 GB
-    * 1 disco HDD 500 GB
-
----
-
-# Software
-
-(Pendiente de subir script)
+| Hardware | Descripción |
+| -------- | -------------- |
+| CPU      |
+| RAM      | 16 GB |
+| Disco 1  | SSH 128 GB |
+| Disco 2  | HDD 500 GB |
+| T Red    | |
+| Monitor  | |
 
 ---
 
@@ -46,3 +49,29 @@ Durante al clonación elegimos las siguientes opciones:
 * Done
 * Begginer
 * Restore Disk
+
+---
+
+# Usuarios
+
+| Nombre   | Descripción |
+| -------- | ----------- |
+| asir     | Para usar en el turno de mañana por los alumnos y profesores |
+| daw      | Para usar en el turno de tarde por los alumnos y profesores |
+| super    | Sólo para tareas del sistema |
+| root     | Sólo para tareas del sistema |
+
+---
+
+# Particiones
+
+
+---
+
+# Software
+
+| Software | Descripción |
+| -------- | ----------- |
+| SSOO     | Windows10 pro education |
+
+* Consultar script de instalación para ver el detalle del software instalado.
