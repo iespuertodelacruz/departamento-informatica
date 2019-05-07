@@ -1,0 +1,8 @@
+[Education]
+name=Applications for education users (openSUSE_Tumbleweed)
+enabled=1
+autorefresh=0
+baseurl=http://download.opensuse.org/repositories/Education/openSUSE_Tumbleweed/
+type=rpm-md
+gpgcheck=1
+gpgkey=http://download.opensuse.org/repositories/Education/openSUSE_Tumbleweed/repodata/repomd.xml.key
