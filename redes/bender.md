@@ -1,17 +1,21 @@
 
 # Router BENDER
 
-Bender es un router Cisco. En este documento tenemos algunas miniguías para hacer
-las acciones más frecuentes en dicho router.
+Bender es un router Cisco. En este documento tenemos algunas mini-guías para hacer las acciones más frecuentes en dicho router.
 
 ---
 
 ## Cambiar la asociación IP-MAC
 
-Entrar al router:
+**Entrar al router:**
 * `ssh user@IP-de-Bender`, Iniciar conexión SSH para entrar al router
-* `BENDER# show running-config`, para consultar la configuración y localizar el nombre
-PC a cambiar (NAME). Debe tener la forma `aula109pcXX`.
+
+> En caso de obtener este mensaje: `Unable to negotiate with IP port 22: no matching cipher found. Their offer: aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc`, entonces buscar los cifrados disponibles `ssh -Q cipher` y usar alguno compatible con el servidor. Por ejemplo:
+>
+> `ssh -c aes256-cbc user@IP`
+
+Consultar configuración actual:
+* `BENDER# show running-config`, para consultar la configuración y localizar el nombre PC a cambiar (NAME). Debe tener la forma `aula109pcXX`.
 
 Modificar la configuración:
 * `BENDER# clear ip dhcp binding *`, limpiar las asociaciones pervias de IP para PC's invitados.
