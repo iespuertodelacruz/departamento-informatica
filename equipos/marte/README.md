@@ -28,7 +28,7 @@ _Pendiente_
 
 # Software
 
-* SSOO base: OpenSUSE Leap 15.0
+* SSOO base: [OpenSUSE Leap 15.0](opensuse.md)
 * Aplicaciones instaladas: Consultar [script de instalación](./files/install.sh) para ver el detalle del software instalado.
 * Repositorios agregados: [atom](./files/atom.repo), [Education](./files/Education.repo), [virtualbox](./files/virtualbox.repo) y [visualcode](./files/visualcode.repo).
 
