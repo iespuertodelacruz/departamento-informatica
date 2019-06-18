@@ -1,5 +1,7 @@
 
-# Proceso de clonación - MARTE
+# 1. Proceso de clonación - MARTE
+
+## 1.1 Boot sequence
 
 1. Encender equipo y pulsar F10 para acceder a la UEFI-BIOS.
     * Avanzado -> Secure Boot Configuration
@@ -7,6 +9,14 @@
 1. Iniciar PC con pendrive Clonezilla.
     * Pulsar F9 para mostrar `Boot Menu`
     * Elegir `Legacy USB DISK 2.0...(con clonezilla)`
+
+## 1.2 Clonar por entorno gráfico
+
+> NOTA: Localizar los discos con las imágenes para clonar.
+>
+> * Indicar que en los discos externos del departamento hay 2 particiones, una de arranque de 1GB con el clonezilla (en principio todos tienen la misma versión de clonezilla) y la otra con el espacio restante donde están las imágenes, así que ya no es necesario usar los pendrives, se puede hacer todo desde los discos duros externos. Al usar el disco externo hay que elegir la partición sdb2 y cuando pregunte dónde están las imágenes, como están en el raíz, pulsar el "DONE" directamente sin elegir ningún directorio.
+> * Al conectar los discos duros, hay que fijarse que el conector sea USB 3.0 (conector azul o indica SS), porque si se pone en otro conector USB 2.x, la clonación va a durar más del doble de tiempo.
+
 1. Realizar la clonación (Las imágenes están en los discos externos USB del departamento). Durante al clonación elegimos las siguientes opciones:
     * Idioma: `es_ES`
     * `device-image`
@@ -26,26 +36,27 @@
 
 ---
 
-# Comandos
+# 2. Comandos para clonar
 
-La herramienta de clonación que usa Clonezilla es `partclone`.
+En lugar de clonar usando el entorno gráfico, también podemos usar directamente el comando. Cuando se conoce es más rápido.
 
-Los comandos que se invocan son:
+Por ejemplo, iniciar un CDLIVE que tenga la herramienta de clonación que usa Clonezilla (`partclone`), y luego los comandos que se invocan son:
 
+Para restaurar el disco `nvme0n1`:
 ```
 /usr/sbin/ocs-sr -g auto -e1 auto -e2 -r -j2 -c -scr -p choose restoredisk 201905-marte-nvme0n1 nvme0n1
 ```
 
+Para restaurar el disco `sda`:
 ```
 /usr/sbin/ocs-sr -g auto -e1 auto -e2 -r -j2 -c -scr -p choose restoredisk 201905-marte-sda sda
-
 ```
 
 ---
 
-# Problemas encontrados y las soluciones propuestas
+# 3. Problemas encontrados y las soluciones propuestas
 
-## Problemas con el GRUB (EN PC4 y PC6)
+## 3.1 Problemas con el GRUB (EN PC4 y PC6)
 
 **Descripción**
 
@@ -64,7 +75,7 @@ Se prueba a clonar de nuevo el equipo con la versión correcta de Clonezilla, pe
 
 Como habíamos perdido ya mucho tiempo probando diferentes alternativas, se decide ser un poco más "drástico". Usamos el LiveCD para instalar la versión mínima de Ubuntu (la instalación es bastante rápida, el instalador está en el pendrive naranja). Una vez finaliza la instalación mínima de Ubuntu, volvemos a clonar y ahora sí funciona todo bien (seguro que hay una solución más "elegante", pero esta es bastante rápida)
 
-## Problemas con la EFI-BIOS (PC12 y PC16)
+## 3.2 Problemas con la EFI-BIOS (PC12 y PC16)
 
 **Descripcion**
 
