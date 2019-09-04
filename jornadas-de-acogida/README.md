@@ -13,16 +13,9 @@ Table of Contents
 | ------- | ---------------------------------------- | ---------- |
 | 1.      | [Normas de centro](normas-del-centro.md) | Horarios, Normas de convivencia, Asistencia, Comportamiento, Prendas y dispositivos, Salidas del centro, Las canchas, Faltas de disciplina |
 | 2.      | [Bajas, pérdida de evaluación contínua, y promoción](bajas.md) | Orden de funcionamiento sobre las bajas de matrícula, Normativa sobre la evaluación contínua, Módulos imprescindibles |
-| 3.      | Normas de aula | Prohibiciones dentro del aula, Obligaciones dentro del aula |
-
-4- Modo de trabajo	13
-4.1 Inicio/parada de los equipos.	13
-4.2 Particiones. Espacio de trabajo.	13
-4.3 Pendrive y copias de seguridad	13
-4.4 Servidor Leela.	14
-4.5 Monitorización de los equipos	14
-
-5. Plataforma Moodle.	15
+| 3.      | [Normas de aula](normas-de-aula.md) | Prohibiciones dentro del aula, Obligaciones dentro del aula |
+| 4.      | [Modo de trabajo](modo-de-trabajo.md) | Inicio/parada de los equipos.	Particiones. Espacio de trabajo.	Pendrive y copias de seguridad. Servidor Leela.	Monitorización de los equipos	|
+| 5.      | Plataforma Moodle.	15
 5.1 Plataforma de eLearning	15
 5.2 Funcionamiento básico	15
 
