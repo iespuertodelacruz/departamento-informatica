@@ -53,11 +53,6 @@
 # fdisk -l
 
 Disk /dev/sda: 119,2 GiB, 128035676160 bytes, 250069680 sectors
-Units: sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-Disklabel type: dos
-Disk identifier: 0x069d446d
 
 Disposit.  Inicio    Start     Final  Sectores  Size Id Tipo
 /dev/sda1             2048    206847    204800  100M  b W95 FAT32
@@ -65,13 +60,7 @@ Disposit.  Inicio    Start     Final  Sectores  Size Id Tipo
 /dev/sda3          4401152  46344191  41943040   20G 83 Linux
 /dev/sda4  *      46344192 250064895 203720704 97,1G  7 HPFS/NTFS/exFAT
 
-
 Disk /dev/sdb: 931,5 GiB, 1000204886016 bytes, 1953525168 sectors
-Units: sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 4096 bytes
-I/O size (minimum/optimal): 4096 bytes / 4096 bytes
-Disklabel type: dos
-Disk identifier: 0x000b8509
 
 Disposit.  Inicio      Start      Final  Sectores  Size Id Tipo
 /dev/sdb1               2048  949999615 949997568  453G 83 Linux
