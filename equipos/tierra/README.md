@@ -27,10 +27,10 @@
 
 # Software
 
-| Software | Descripción |
-| -------- | ----------- |
+| Software | Descripción          |
+| -------- | -------------------- |
 | SSOO     | Lubuntu 16.04.05 LTS |
-| italc    | Monitorización |
+| italc    | Monitorización       |
 
 * Consultar script de instalación para ver el detalle del software instalado.
 
