@@ -24,7 +24,9 @@ Transcurrido el citado plazo, durante el resto del curso académico, solo podrá
 
 Avisos previos a la pérdida del derecho de la evaluación contínua.
 
-TO-DO
+![](files/avisos-falta-injustificada1.png)
+
+![](files/avisos-falta-injustificada2.png)
 
 ---
 ## Módulos imprescindibles
