@@ -4,112 +4,112 @@
 # $File: create-moodle-list.rb
 #
 # $Description:
-#   A partir de un fichero CSV pasado por parámetro, con los datos
-#   de los alumnos de informática (según lo genera el programa PinceEkade),
-#   este script crea unos ficheros TXT por cada grupo para su carga en
-#   Moodle.
-#   Además cada fichero TXT servirá para que cada tutor comunique dichos
-#   datos a sus alumnos de grupo.
+#   Por argumentos de entrada se para nombre de un fichero CSV,
+#   con los datos de los alumnos (generados por el programa PinceEkade).
+#   Este script procesa los datos y crea un fichero TXT por cada grupo
+#   para usarlo en:
+#   1) Carga de datos en Moodle.
+#   2) Se pasa a los tutores y ellos comunican los datos a sus alumnos.
 
 require 'pry'
 
-=begin
-Formato de entrada:
-  grupo, clave(dni), nombre, apellido1, apellido2, email
-
-Formato de salida:
-  username, password, firstname, lastname, email, city
-  juanb, secreto, Juan, Benítez, janb@algo.edu, DAW
-=end
-
+# ListPeople#create_list_for
 class ListPeople
-  SEPARATOR=","
-
   def initialize
-    @debug=false
-    @verbose=true
-    @outputfilename='usuarios'
-    @output={}
-
-    @change=[ ['á','a'], ['é','e'], ['í','i'], ['ó','o'], ['ú','u'], ['Á','a'] , ['É','e'], ['Í','i'], ['Ó','o'], ['Ú','u'], ['Ñ','n'], ['ñ','n'], [' ',''] ]
+    @debug = false
+    @verbose = true
+    @outputfilename = 'usuarios'
+    @output = {}
+    @change = [%w[á a], %w[é e], %w[í i], %w[ó o], %w[ú u],
+               %w[Á a], %w[É e], %w[Í i], %w[Ó o], %w[Ú u],
+               %w[Ñ n], %w[ñ n], [' ', '']]
   end
 
-  def create_list_for(pArg)
-    if pArg=='--help' then
+  def create_list_for(input)
+    if input == '--help'
       show_help
     else
-      process(pArg)
+      process(input)
     end
   end
 
   def process(filename)
-    @filename = filename
-    verbose "\n[INFO] Processing <#{@filename}>..."
-
-    if !File.exists? @filename then
-      puts "[ERROR] <#{@filename}> dosn't exist!\n"
-      raise "[ERROR] <#{@filename}> dosn't exist!\n"
-    end
-
-    @file=File.open(@filename,'r')
-    @data=@file.readlines
-
-    @data.each do |line|
-      items=line.split(SEPARATOR)
-      raise "Error en los campos del CVS" if items.size<5
-
-      grupo=items[0].downcase
-      clave=items[1].downcase
-      nombre=items[2].capitalize
-      apellido1=items[3].capitalize
-      apellido2=items[4].capitalize
-      apellidos=apellido1+" "+apellido2
-      email=items[5].gsub!("\n","").downcase
-
-      #username
-      u=nombre[0..2]+apellido1.gsub(' ','')[0..2]
-      u=u+(apellido2.gsub(' ','')[0..2]||apellido1.gsub(' ','')[0..2])
-      username=u.downcase
-      @change.each { |i| username.gsub!(i[0],i[1]) }
-
-      email="#{username}@cambiar-email.#{grupo}" if email.size<2
-      clave="201617" if clave.size<2
-
-      if @output[grupo.to_sym].nil? then
-        f=File.open("#{@outputfilename}_#{grupo}.txt",'w')
-        @output[grupo.to_sym]=f
+    data = read_content_of(filename)
+    data.each do |line|
+      items = get_items_hash_from(line)
+      items[:username] = get_username(items)
+      items[:email] = "#{items[:username]}@cambiar-email.#{items[:grupo]}" if items[:email].size < 2
+      if @output[items[:grupo]].nil?
+        f = File.open("#{@outputfilename}_#{items[:grupo]}.txt", 'w')
+        @output[items[:grupo]] = f
         f.write("username;password;firstname;lastname;email;city\n")
       end
-      #username, password, firstname, lastname, email, city
-      msg = "#{username};#{clave};#{nombre};#{apellidos};#{email};#{grupo}"
-      verbose( msg )
-      @output[grupo.to_sym].write("#{msg}\n")
+      # username, password, firstname, lastname, email, city
+      msg = "#{items[:username]};#{items[:clave]};#{items[:nombre]};" \
+            "#{items[:apellidos]};#{items[:email]};#{items[:grupo]}"
+      verbose(msg)
+      @output[items[:grupo]].write("#{msg}\n")
     end
-
-    @file.close
-    @output.each_value { |i| i.close }
+    @output.each_value(&:close)
   end
 
-private
+  private
 
-  def execute_command(lsCommand)
-    verbose "(*) Executing: #{lsCommand}"
-    system(lsCommand) if !@debug
+  def read_content_of(filename)
+    # Open and read input filename
+    verbose "\n[INFO] Processing <#{filename}>..."
+    unless File.exist? filename
+      puts "[ERROR] <#{filename}> dosn't exist!\n"
+      raise "[ERROR] <#{filename}> dosn't exist!\n"
+    end
+    file = File.open(filename, 'r')
+    content = file.readlines
+    file.close
+    content
+  end
+
+  def get_items_hash_from(line)
+    input = line.split(',')
+    raise 'Error en los campos del CVS' if input.size < 5
+
+    items = {}
+    items[:grupo] = input[0].downcase
+    items[:clave] = input[1].downcase
+    items[:clave] = '201920' if items[:clave].size < 2
+    items[:nombre] = input[2].capitalize
+    items[:apellido1] = input[3].capitalize
+    items[:apellido2] = input[4].capitalize
+    items[:apellidos] = items[:apellido1] + ' ' + items[:apellido2]
+    items[:email] = input[5].gsub!("\n", '').downcase
+    items
+  end
+
+  def get_username(items)
+    u = items[:nombre][0..2] + items[:apellido1].gsub(' ', '')[0..2]
+    u += (items[:apellido2].gsub(' ', '')[0..2] ||
+          items[:apellido1].gsub(' ', '')[0..2])
+    username = u.downcase
+    @change.each { |i| username.gsub!(i[0], i[1]) }
+    username
+  end
+
+  def execute_command(command)
+    verbose "(*) Executing: #{command}"
+    system(command) unless @debug
   end
 
   def show_help
-    puts "Uso:"
-    puts " #{$0} FICHERO.csv"
-    puts " "
-    puts " Formato del fichero CSV:"
-    puts "   grupo, clave/DNI, nombre, apellido1, apellido2, email"
+    puts 'Uso:'
+    puts " #{$PROGRAM_NAME} FICHERO.csv\n\n"
+    puts 'INPUT  : Formato del fichero CSV:'
+    puts '         grupo, clave/DNI, nombre, apellido1, apellido2, email'
+    puts 'OUTPUT : Varios ficheros TXT. Uno por grupo.'
   end
 
-  def verbose(lsText)
-    puts lsText if @verbose
+  def verbose(text)
+    puts text if @verbose
   end
 end
 
 i = ListPeople.new
-i.create_list_for (ARGV.first||'--help')
-
+i.create_list_for(ARGV.first || '--help')
