@@ -28,9 +28,9 @@ function install_tic {
   zypper install -y gcc make kernel-devel
   zypper install -y code atom
   zypper install -y sqlite3 ruby2.5-rubygem-sqlite3
-  zypper install -y docker 
+  zypper install -y docker
   #zypper install -y gns3-gui gns3-server
-  #zypper install -y vagrant  
+  #zypper install -y vagrant
   zypper install -y automake gdbm-devel libffi-devel libyaml-devel libopenssl-devel ncurses-devel readline-devel zlib-devel sqlite3-devel nodejs8 git
   zypper install -y -t pattern devel_C_C++
   zypper install -y virtualbox
@@ -42,7 +42,7 @@ function install_tic {
 
 function install_mul {
   echo "[INFO] Multimedia..."
-  zypper install -y krita 
+  zypper install -y krita
   zypper install -y inkscape
   zypper install -y blender
   zypper install -y vlc audacity
@@ -67,6 +67,16 @@ function install_edu {
   zypper install -y libreoffice-writer-extensions
 }
 
+function conf_vbox {
+  # Virtualbox
+  usermod super -G vboxusers
+  usermod asir -G vboxusers
+  usermod daw -G vboxusers
+  #VBoxManage extpack uninstall "Oracle VM VirtualBox Extension Pack"
+  #VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-4.3.30-101610.vbox-extpack
+  #virtualbox Oracle_VM_VirtualBox_Extension_Pack-*.vbox-extpack &
+}
+
 zypper refresh
 #add_repos
 install_tic
@@ -77,15 +87,7 @@ zypper update
 
 exit 0
 
-function conf_vbox {
-  # Virtualbox
-  usermod super -G vboxusers
-  usermod asir -G vboxusers
-  usermod daw -G vboxusers
-  #VBoxManage extpack uninstall "Oracle VM VirtualBox Extension Pack"
-  #VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-4.3.30-101610.vbox-extpack
-  #virtualbox Oracle_VM_VirtualBox_Extension_Pack-*.vbox-extpack &
-}
+#=======================================
 
 function install_android {
   add-apt-repository -y ppa:webupd8team/java
@@ -104,24 +106,8 @@ function install_android {
   apt-get -y install android-studio
 }
 
-function conf_italc {
-  usermod alumno -G italc
-  usermod super -G italc
-  #italc 108
-  cp key108 /etc/italc/keys/public/teacher/key
-  mv /etc/italc/italc.conf /etc/italc/italc.conf.bak
-  cp italc.conf /etc/italc/italc.conf
-  #italc 109
-  #cp key109 /etc/italc/keys/public/teacher/key
-  chgrp -R italc /etc/italc/keys/public/
-
-  echo "exec /usr/bin/ica &">>/mnt/asir/home/.profile
-  echo "exec /usr/bin/ica &">>/mnt/daw/home/.profile
-}
-
 function dudas {
   # Actualizaciones desde archivos descargados.
   libreoffice LanguageTool-3.0.oxt &
   vagrant
 }
-

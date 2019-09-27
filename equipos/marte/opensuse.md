@@ -12,10 +12,14 @@ Principales diferencias entre Debian/Ubuntu y OpenSUSE:
 | Directorio repos    | /etc/zypp/repos   | /etc/apt |
 | Fichero de repos    | *.repo            | sources.list |
 
+---
+
 ## Network
 
 * Configurar OpenSUSE para usar NetworkManager como servicio de red en lugar de Wicked.
 * El motivo es porque Wicked no está cogiendo correctamente la configuración de red vía DHCP. Pendiente de revisar.
+
+---
 
 ## Monitorización
 

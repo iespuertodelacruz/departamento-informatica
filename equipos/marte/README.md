@@ -11,22 +11,31 @@
 
 ---
 
-# Hardware
+# 1. Hardware
 
 _Pendiente_
 
-| Hardware | Descripción |
-| -------- | ----------- |
-| CPU      |
-| RAM      | 16 GB |
-| Disco 1  | SSH 128 GB |
-| Disco 2  | HDD 500 GB |
-| T Red    | |
-| Monitor  | |
+| Hardware | Descripción   |
+| -------- | ------------- |
+| CPU      |            i7 |
+| RAM      |         16 GB |
+| Disco 1  | SSH-M2 128 GB |
+| Disco 2  |    SSH 500 GB |
+| T Red    |               |
+| Monitor  |               |
+
+
+## 1.1 Configuración del Monitor
+
+Configurar el monitor de la siguiente forma:
+* Pulsar botón bajo el monitor para activar el menú.
+* `Control de entrada -> Detección conexión directa DP -> Siempre activo`
 
 ---
 
-# Software
+# 2. Configuraciones
+
+## 2.1 Software
 
 | Software        | Detalle                           |
 | --------------- | --------------------------------- |
@@ -35,9 +44,7 @@ _Pendiente_
 | Aplicaciones instaladas | Consultar [script de instalación](./files/install.sh) para ver el detalle del software instalado. |
 | Repositorios agregados | [atom](./files/atom.repo), [Education](./files/Education.repo), [virtualbox](./files/virtualbox.repo) y [visualcode](./files/visualcode.repo) |
 
----
-
-# Usuarios
+## 2.2 Usuarios
 
 | Nombre | Descripción |
 | ------ | ----------- |
@@ -46,9 +53,9 @@ _Pendiente_
 | super  | Sólo para tareas del sistema |
 | root   | Sólo para tareas del sistema |
 
----
+> NOTA: En /home se guardan ficheros tar con las copias de seguridad de los home de los usuarios en el momento de empezar el curso. La idea es usarlos el próximo septiembre para restaurar dichos usuarios.
 
-# Particiones
+## 2.3 Particiones
 
 ```
 # fdisk -l
