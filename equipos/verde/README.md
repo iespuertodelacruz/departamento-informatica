@@ -71,7 +71,7 @@ drwxr-xr-x 2 root root       4096 jun  8  2016 old.d
 -rwxr-xr-x 1 root root       4663 jun 14  2016 script-instalar-aula206_v3.rb
 ```
 
-El script `/home/guest/reset-user.rb`, hace la limpieza del usuario `alumno` cuando el último reinicio registrado (Fichero `last-execution.dat`) es inferior a la fecha actual. Esto es, el fichero `alumno.tar` es el que se usa para restaurar al usuario alumno.
+El script [reset-user.rb](./files/reset-user.rb), hace la limpieza del usuario `alumno` cuando el último reinicio registrado (Fichero `last-execution.dat`) es inferior a la fecha actual. Esto es, el fichero `alumno.tar` es el que se usa para restaurar al usuario alumno.
 
 Además el script se puede personalizar para crear un `/home/alumno` con Cocodrile o sin Cocodrille.
 * `cp alumno-con-cocodrile.tar alumno.tar`, si queremos que el el siguiente reinicio de PC, el alumno se limpie con Cocodrile.
