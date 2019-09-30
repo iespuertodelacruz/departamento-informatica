@@ -60,13 +60,10 @@ En la carpeta `/home/guest`, están los ficheros/scripts que ayudan a gestionar 
 
 ```
 pc31aula206# vdir
-total 3348188
 -rw-r--r-- 1 root root 1214126080 dic 21  2015 alumno-con-cocodrile.tar
 -rw-r--r-- 1 root root 1104486400 dic  3  2015 alumno-sin-cocodrile.tar
 -rw-r--r-- 1 root root 1109893120 jun 10  2016 alumno.tar
 -rw-r--r-- 1 root root          9 sep 30 07:06 last_execution.dat
--rw-r--r-- 1 root root        131 jun  7  2016 mac-list.txt
-drwxr-xr-x 2 root root       4096 jun  8  2016 old.d
 -rwxr-xr-x 1 root root        580 dic 21  2015 reset-user.rb
 -rwxr-xr-x 1 root root       4663 jun 14  2016 script-instalar-aula206_v3.rb
 ```
