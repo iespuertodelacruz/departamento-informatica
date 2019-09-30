@@ -1,13 +1,26 @@
 
+# Apagón
+
+**Descripción**
+
+Cuando hay un apagón o bajada de corriente y no tenemos energía en los equipos.
+
+**Acciones**
+
+* Comprobar que estén todas las palancas subidas. Si no sabemos o están bajadas, comentarlo con el personal de mantenimiento. Ellos se encargan de tocas los cuadros y subir las palancas. OJO: Subir las palancas NO es algo trivial o sin importancia. Hay una forma correcta y otra incorrecta de hacerlo. Para prevenir el daño de los equipos dejar esta tarea a mantenimiento.
+* Luego habrá que revisar los servidores (Bender, Leela, Router ADSL, etc.) y comprobar si están encendidos. En caso contrario hay que encenderlos y esperar a que se inicien los servicios para empezar a trabajar en las aulas.
+
+---
+
 # No hay red
 
 **Descripción**
 
 Cuando tengamos problemas con la red en nuestros equipos debemos buscar que partes funcionan y cuáles no, para identificar dónde está el problema.
 
-**Ejemplo**
+**Acciones**
 
-Voy al equipo de los alumnos y compruebo:
+Ir a los equipos de los alumnos:
 * `ip a`, comprobar si coge una configuración de red correcta del DHCP.
 * `ping BENDER`, comprobar si tengo acceso al router Bender.
 * `ping 192.168.1.1`, comprobar si tengo acceso al router del ISP.
