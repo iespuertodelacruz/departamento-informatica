@@ -27,6 +27,8 @@ _Pendiente_
 
 ## 1.1 Configuración del Monitor
 
+> Cambiar configuración en las pantallas para que los equipos no se queden "muertos" al arrancar si las pantallas están apagadas.
+
 Configurar el monitor de la siguiente forma:
 * Pulsar botón bajo el monitor para activar el menú.
 * `Control de entrada -> Detección conexión directa DP -> Siempre activo`
@@ -48,6 +50,10 @@ Actualizar todos los equipos al comienzo del curso:
 * `sudo zypper refresh`, refrescar repositorios.
 * `sudo zypper update`, actualizar paquetes.
 
+Consultar la guía para configurar el montorizador [Veyon](./veyon.md)
+
+---
+
 ## 2.2 Usuarios
 
 | Nombre | Descripción |
@@ -58,6 +64,8 @@ Actualizar todos los equipos al comienzo del curso:
 | root   | Sólo para tareas del sistema |
 
 > NOTA: En /home se guardan ficheros tar con las copias de seguridad de los home de los usuarios en el momento de empezar el curso. La idea es usarlos el próximo septiembre para restaurar dichos usuarios.
+
+---
 
 ## 2.3 Particiones
 

@@ -50,15 +50,14 @@ Actualizar VirtualBox:
 
 ## 2.3 Usuarios
 
-| Nombre   | Home           | Descripción |
-| -------- | -------------- |----------- |
-| asir     | /mnt/asir/home | Usar en el turno de mañana por alumnos y profesores |
-| daw      | /mnt/daw/home | Usar en el turno de tarde por alumnos y profesores |
-| super    | Sólo para tareas sysadmin del sistema |
-| root     | Sólo para tareas sysadmin del sistema |
+| Nombre   | Home           | Descripción          |
+| -------- | -------------- |--------------------- |
+| asir     | /mnt/asir/home | Turno de mañana por alumnos y profesores |
+| daw      | /mnt/daw/home  | Turno de tarde por alumnos y profesores |
+| super    | /home/super    | Sólo para tareas sysadmin del sistema |
+| root     | /root          | Sólo para tareas sysadmin del sistema |
 
-
-Para "limpiar" los home de los usuarios, usamos ficheros tar con la copia de seguridad que se hizo nada más instalar el sistema.
+* Para "limpiar" los home de los usuarios, usamos ficheros tar con la copia de seguridad que se hizo nada más instalar el sistema.
 
 ---
 
