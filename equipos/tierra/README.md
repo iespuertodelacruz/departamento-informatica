@@ -35,6 +35,7 @@
 | italc    | Monitorización       |
 
 * Consultar script de instalación para ver el detalle del software instalado.
+* Consultar la guía para configurar el montorizador [Veyon](../general/veyon.md)
 
 ## 2.2 Actualización
 

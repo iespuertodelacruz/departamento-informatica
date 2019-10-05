@@ -11,7 +11,7 @@
 
 ---
 
-# Hardware
+# 1. Hardware
 
 | Hardware | Descripción           |
 | -------- | --------------------- |

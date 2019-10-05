@@ -50,7 +50,7 @@ Actualizar todos los equipos al comienzo del curso:
 * `sudo zypper refresh`, refrescar repositorios.
 * `sudo zypper update`, actualizar paquetes.
 
-Consultar la guía para configurar el montorizador [Veyon](./veyon.md)
+Consultar la guía para configurar el montorizador [Veyon](../general/veyon.md)
 
 ---
 
