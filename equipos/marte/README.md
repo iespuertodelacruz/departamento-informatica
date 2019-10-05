@@ -44,6 +44,10 @@ Configurar el monitor de la siguiente forma:
 | Aplicaciones instaladas | Consultar [script de instalación](./files/install.sh) para ver el detalle del software instalado. |
 | Repositorios agregados | [atom](./files/atom.repo), [Education](./files/Education.repo), [virtualbox](./files/virtualbox.repo) y [visualcode](./files/visualcode.repo) |
 
+Actualizar todos los equipos al comienzo del curso:
+* `sudo zypper refresh`, refrescar repositorios.
+* `sudo zypper update`, actualizar paquetes.
+
 ## 2.2 Usuarios
 
 | Nombre | Descripción |

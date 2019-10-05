@@ -12,10 +12,10 @@
 > NOTA: Como uno de los equipos lo usa el profesor, se ha incluido otro equipo (PC01) con características diferentes.
 ---
 
-# Hardware
+# 1. Hardware
 
 | Hardware | Descripción |
-| -------- | -------------- |
+| -------- | ----------- |
 | CPU      |
 | RAM      | 8 GB |
 | Disco 1  | SSH 128 GB |
@@ -25,7 +25,9 @@
 
 ---
 
-# Software
+# 2. Software
+
+## 2.1 Sistema y aplicaciones
 
 | Software | Descripción          |
 | -------- | -------------------- |
@@ -34,9 +36,19 @@
 
 * Consultar script de instalación para ver el detalle del software instalado.
 
+## 2.2 Actualización
+
+Actualizar todos los equipos al comienzo del curso:
+* `sudo apt update`, refrescar el catálogo.
+* `sudo apt upgrade`, actualizar todos los paquetes.
+
+Actualizar VirtualBox:
+* Como VirtualBox no se instaló mediante repositorio (Es lo recomendado), sino por descargar del fichero deb, entonces debemos actualizar manualmente de la versión 5 a la 6.
+* Las Guest Additions de la versión 5 que estaba instaladas ya no funcionan (en la lista de extensiones aparece con una exclamación). Se prueba a cargar una máquina virtual del curso pasado y no funciona. Se procede a desinstalar el paquete de extensiones y se instala el de la versión 6. Se vuelve a cargar la máquina virtual y ahora sí parece funcionar bien.
+
 ---
 
-# Usuarios
+## 2.3 Usuarios
 
 | Nombre   | Home           | Descripción |
 | -------- | -------------- |----------- |
@@ -45,9 +57,12 @@
 | super    | Sólo para tareas sysadmin del sistema |
 | root     | Sólo para tareas sysadmin del sistema |
 
+
+Para "limpiar" los home de los usuarios, usamos ficheros tar con la copia de seguridad que se hizo nada más instalar el sistema.
+
 ---
 
-# Particiones
+# 2.4 Particiones
 
 ```
 # fdisk -l
