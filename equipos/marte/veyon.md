@@ -37,3 +37,9 @@ De esta forma, para instalar los esclavos/clientes hay que hacer lo siguiente:
 6. Ir a "Locations & computers" y comprobar si el grupo "profe" tiene la IP correcta según se esté en la 109 o la 103 (cambiarla si no)
 7. pulsar el botón "Apply" de abajo para salvar los cambios.
 8. Ir a "General" y arrancar el demonio (hay un botón con forma de "play")
+
+**Comprobación final**
+
+Con eso debería bastar. En algunos equipos no funciona la primera vez (no se ven desde el master), pero tras reiniciarlos sí que aparecen.
+
+Es conveniente luego entrar en los esclavos con usuarios sin privilegios (daw, asir, etc.) y abrir el "veyon master" para comprobar que está "capado" y que no pueden hacer nada.
