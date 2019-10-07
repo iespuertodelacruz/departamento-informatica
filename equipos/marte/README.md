@@ -50,7 +50,12 @@ Actualizar todos los equipos al comienzo del curso:
 * `sudo zypper refresh`, refrescar repositorios.
 * `sudo zypper update`, actualizar paquetes.
 
-Consultar la guía para configurar el montorizador [Veyon](../general/veyon.md)
+Veyon:
+*Consultar la guía para configurar el montorizador [Veyon](../general/veyon.md)
+
+Vagrant:
+* Como OpenSUSE Leap 15.1 viene con ruby 2.5.5 (No se puede cambiar porque se estropea Yast), entonces no se puede instalar íúlitma versión de Vagrant.
+* Hay que instalar Vagrant version 2.2.0 desde la URL siguiente: https://software.opensuse.org/package/vagrant
 
 ---
 
