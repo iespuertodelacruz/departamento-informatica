@@ -1,0 +1,7 @@
+[http-download.opensuse.org-bfc252f0]
+name=openSUSE:Leap:15.1
+enabled=1
+autorefresh=1
+baseurl=http://download.opensuse.org/distribution/leap/15.1/repo/oss/
+type=rpm-md
+keeppackages=0
