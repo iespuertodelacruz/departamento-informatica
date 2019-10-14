@@ -52,7 +52,7 @@ Parámetro | Valor
 *Wireless Mode* | Access Point
 *Wireless Network Name (SSID)* | :eyeglasses: Ver valores en tabla inferior
 *Wireless Security Operation Mode* | WPA/WPA2 - Enterprise
-*Radius Server IP* | :eyeglasses: Ver valores en tabla inferior
+*Radius Server IP* | 172.20.1.2
 *Radius Password* | :lock: Ver en [Bitwarden](https://vault.bitwarden.com)
 
 * La configuración de los puntos de acceso (*clientes* en terminología Radius) se realiza en el fichero: `/etc/freeradius/client.conf`.
