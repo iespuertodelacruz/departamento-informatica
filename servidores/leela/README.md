@@ -42,7 +42,7 @@ Los archivos de configuración del servicio *FreeRadius* se encuentran en *Leela
 * El punto de acceso se debería configurar con los siguientes parámetros para un correcto funcionamiento con el servicio *Radius*:
 
 Parámetro | Valor
-- | -
+--- | ---
 *WPS Status* | Disabled
 *LAN Type* | Static IP
 *IP Address* | :eyeglasses: Ver valores en tabla inferior
@@ -66,7 +66,7 @@ client <ip_del_punto_de_acceso> {
 * Los puntos de acceso configurados hasta el momento son:
 
 Ubicación | IP | Nombre corto/SSID | MAC
-- | - | - | - |
+--- | --- | --- | --- |
 Aula 109 | 172.19.0.2 | aula109 | 0C-80-63-D7-1E-52
 
 #### Usuarios
@@ -76,10 +76,10 @@ Aula 109 | 172.19.0.2 | aula109 | 0C-80-63-D7-1E-52
 `<usuario> Cleartext-Password := <contraseña>`
 * El esquema de credenciales para las cuentas de usuario es el siguiente:
 
-. | Alumnado | Profesorado
-- | - | -
-**Usuario** | `alu<num_expediente>` | `<DNI>` (con letra mayúscula)
-**Contraseña** | `<CIAL>` | `<correo electrónico>`
+. | Usuario | Contraseña
+--- | --- | ---
+**Profesorado** | `alu<num_expediente>` | `<DNI>` (con letra mayúscula)
+**Alumnado** | `<CIAL>` | `<correo electrónico>`
 
 > El CIAL es el primer número que aparece en la esquina superior izquierda de la tarjeta del alumnado. El número de expediente es el número que está justo debajo del CIAL y que suele tener 4 dígitos.
 * Los datos de alumnado en este formato se pueden obtener a través de TIFON.
