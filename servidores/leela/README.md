@@ -78,8 +78,8 @@ Aula 109 | 172.19.0.2 | aula109 | 0C-80-63-D7-1E-52
 
 . | Usuario | Contraseña
 --- | --- | ---
-**Profesorado** | `alu<num_expediente>` | `<DNI>` (con letra mayúscula)
-**Alumnado** | `<CIAL>` | `<correo electrónico>`
+**Profesorado** | `<DNI>` (con letra mayúscula) | `<correo electrónico>`
+**Alumnado** | `alu<num_expediente>` | `<CIAL>`
 
 > El CIAL es el primer número que aparece en la esquina superior izquierda de la tarjeta del alumnado. El número de expediente es el número que está justo debajo del CIAL y que suele tener 4 dígitos.
 * Los datos de alumnado en este formato se pueden obtener a través de TIFON.
