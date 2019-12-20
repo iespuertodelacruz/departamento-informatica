@@ -44,7 +44,7 @@ Configurar el monitor de la siguiente forma:
 | SSOO base       | [OpenSUSE Leap 15.0](opensuse.md) |
 | Servicio de red | Usar NetworkManager en lugar de Wicked |
 | Aplicaciones instaladas | Consultar [script de instalación](./files/install.sh) para ver el detalle del software instalado. |
-| Repositorios agregados | [atom](./files/atom.repo), [Education](./files/Education.repo), [virtualbox](./files/virtualbox.repo), [visualcode](./files/visualcode.repo) y [vagrant-version-222.repo](./files/vagrant-version-222.repo) |
+| Repositorios agregados | [atom](./files/atom.repo), [Education](./files/Education.repo), [virtualbox](./files/virtualbox.repo), [visualcode](./files/visualcode.repo) y [vagrant-2.2.6.repo](./files/vagrant-2.2.6.repo) |
 
 Actualizar todos los equipos al comienzo del curso:
 * `sudo zypper refresh`, refrescar repositorios.
