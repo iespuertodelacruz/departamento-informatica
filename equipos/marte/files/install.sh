@@ -40,6 +40,10 @@ function install_tic {
   # https://software.opensuse.org/package/android-studio?locale=nn
 }
 
+function remove_tic {
+  zypper remove -y pk-update-icon # Notificaciones de actualizaciones en el panel
+}
+
 function install_mul {
   echo "[INFO] Multimedia..."
   zypper install -y krita
@@ -80,6 +84,7 @@ function conf_vbox {
 zypper refresh
 #add_repos
 install_tic
+remove_tic
 #conf_vbox
 #install_mul
 #install_edu
