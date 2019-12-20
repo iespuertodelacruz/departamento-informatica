@@ -1,9 +1,21 @@
 
-# Tareas
+# Seguimiento de los talleres (201920 trim1)
+
+> Propuesta de documento para reflejar el seguimiento de los talleres.
+
+Personas asignadas en el curso 201920:
+1.
+1.
+1.
+
+---
+
+# Tareas propuestas
 
 | ID | Tarea                                      | Estado |
 | -- | ------------------------------------------ | ------------------------ |
 | 01 | FreeRadius con Docker en Leela             | Proyecto docente T3 2019 |
+|    | Documentar FreeRadius con Docker en Leela  |  |
 | 02 | Configurar equipos aula 109 para 201920    | Proyecto docente T3 2019 |
 | 03 | Limpieza + inventario del departamento     | Proyecto docente T3 2019 |
 | 04 | Documentar infraestructura (aulas+serv)    | |
