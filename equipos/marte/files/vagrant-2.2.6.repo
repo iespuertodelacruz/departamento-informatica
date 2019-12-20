@@ -1,0 +1,7 @@
+[http-download.opensuse.org-356cd2c6]
+name=Virtualization:vagrant
+enabled=1
+autorefresh=1
+baseurl=http://download.opensuse.org/repositories/Virtualization:/vagrant/openSUSE_Leap_15.0/
+type=rpm-md
+keeppackages=0
