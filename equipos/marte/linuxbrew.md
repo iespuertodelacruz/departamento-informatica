@@ -1,5 +1,5 @@
 
-# Instalación de linuxbrew en opensuse
+# 1. Instalación de linuxbrew en opensuse
 
 * `su -`, primero pasando a superusuario.
 * `zypper install -t pattern devel_C_C++`, esta parece no necesaria por ya instalada.
@@ -42,13 +42,12 @@ echo export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH" >> .profile
 Las últimas líneas son importantes para composer.
 
 ---
-
-# Acciones para prevenir problemas con algunas aplicaciones
+# 2. Acciones para prevenir problemas con algunas aplicaciones
 
 Lo siguiente es para diferentes problemas observados con la instalación de mysql, apache, php, etc. No es preciso para la instalación en sí de linuxbrew.
 
 
-## Instalar mysql@5.7
+## 2.1 Instalar mysql@5.7
 
 * `brew install mysql@5.7`
 
@@ -84,8 +83,7 @@ Si problemas entrar con skip-grant-tables:
 * Lanzar `/home/linuxbrew/.linuxbrew/opt/mysql-client/bin/mysql_upgrade`
 * Luego parar servidor, entrar normal
 
----
-## Instalar apache2
+## 2.2 Instalar apache2
 
 * En el fichero:  `/home/linuxbrew/.linuxbrew/etc/httpd/httpd.conf`
 cambiar: User a daw y Group a users.
@@ -119,8 +117,7 @@ restart Apache:
 ```
 * Then open http://localhost/phpmyadmin
 
-
-## Para instalar xdebug en php
+## 2.3 Para instalar xdebug en php
 
 * `pecl install xdebug`
 * Luego hay que modificar php.ini al comienzo del fichero:
