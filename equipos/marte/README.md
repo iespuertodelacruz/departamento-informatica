@@ -39,25 +39,20 @@ Configurar el monitor de la siguiente forma:
 
 ## 2.1 Software
 
-| Software        | Detalle                           |
-| --------------- | --------------------------------- |
-| SSOO base       | [OpenSUSE Leap 15.0](opensuse.md) |
-| Servicio de red | Usar NetworkManager en lugar de Wicked |
-| Aplicaciones instaladas | Consultar [script de instalación](./files/install.sh) para ver el detalle del software instalado. |
-| Repositorios agregados | [atom](./files/atom.repo), [Education](./files/Education.repo), [virtualbox](./files/virtualbox.repo), [visualcode](./files/visualcode.repo) y [vagrant-2.2.6.repo](./files/vagrant-2.2.6.repo) |
-
 Actualizar todos los equipos al comienzo del curso:
 * `sudo zypper refresh`, refrescar repositorios.
 * `sudo zypper update`, actualizar paquetes.
 
-Veyon:
-*Consultar la guía para configurar el montorizador [Veyon](../general/veyon.md)
+| Software        | Detalle                           |
+| --------------- | --------------------------------- |
+| SSOO base       | [OpenSUSE Leap 15.0](opensuse.md) |
+| Servicio de red | Usar NetworkManager en lugar de Wicked |
+| Repositorios agregados | [atom](./files/atom.repo), [Education](./files/Education.repo), [virtualbox](./files/virtualbox.repo), [visualcode](./files/visualcode.repo) y [vagrant-2.2.6.repo](./files/vagrant-2.2.6.repo) |
+| Aplicaciones instaladas | Consultar [script de instalación](./files/install.sh) para ver el detalle del software instalado. |
 
-Vagrant:
-* Como OpenSUSE Leap 15.1 viene con ruby 2.5.5 (No se puede cambiar porque se estropea Yast), entonces no se puede instalar íúlitma versión de Vagrant.
-* Hay que instalar Vagrant version 2.2.0:
-    * Desde la URL: https://software.opensuse.org/package/vagrant
-    * Desde fichero de configuración de repositorio [vagrant-version-222.repo](./files/vagrant-version-222.repo).
+Otras aplicaciones instaladas:
+* Consultar la guía para configurar el montorizador [Veyon](../general/veyon.md)
+* Consultar la guía para instalar [linuxbrew](linuxbrew.md) en OpenSUSE.
 
 ---
 
