@@ -46,7 +46,6 @@ Las últimas líneas son importantes para composer.
 
 Lo siguiente es para diferentes problemas observados con la instalación de mysql, apache, php, etc. No es preciso para la instalación en sí de linuxbrew.
 
-
 ## 2.1 Instalar mysql@5.7
 
 * `brew install mysql@5.7`
