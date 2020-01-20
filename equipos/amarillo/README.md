@@ -9,15 +9,13 @@
 | Adquisición | ? |
 | Comprado en | ? |
 
-> NOTA: Estos equipos son los que a fecha de 20190408 están en el aula103.
-
 ---
 
 # Hardware
 
 | Hardware | Descripción |
 | -------- | -------------- |
-| CPU      | ? 
+| CPU      | ?
 | RAM      | ? GB |
 | Disco    | ? GB |
 | T Red    | ? |

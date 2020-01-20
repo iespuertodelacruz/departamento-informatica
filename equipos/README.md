@@ -3,9 +3,9 @@ Distribución de los equipos:
 
 | ID                     | Aula      | Uso                                |
 | ---------------------- | --------- | ---------------------------------- |
+| [rojo](./rojo)         | comodín 1 | ESO, bachillerato y Semipresencial |
 | [amarillo](./amarillo) | 108       | ESO y bachillerato                 |
 | [verde](./verde)       | 206       | ESO, bachillerato y Semipresencial |
-| rojo                   | comodín 1 | ESO, bachillerato y Semipresencial |
 | [tierra](./tierra)     | 103       | CFGS Informática 1er curso         |
 | [marte](./marte)       | 109       | CFGS Informática 2º  curso         |
 
