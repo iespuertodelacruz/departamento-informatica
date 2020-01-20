@@ -1,6 +1,7 @@
 
-# Aula comodín1
+# Equipos ROJO
 
+Actualmente están en el aula comodín1.
 
 # Relación de equipos
 
@@ -21,9 +22,9 @@ PCs HP:
 | a    | 27 | 00:24:81:21:a4:b8 | Error interno SO. Pantalla mal |
 | a    | 28 | 00:24:81:21:a5:97 | Problemas con el teclado |
 
-PC profesor: 
+PC profesor:
 * BIOS: legacy
-* RAM 2GB 
+* RAM 2GB
 * CPU: 32 bits
 * Disco : 931 GB
 
