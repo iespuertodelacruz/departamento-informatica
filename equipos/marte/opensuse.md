@@ -20,7 +20,6 @@ Principales diferencias entre Debian/Ubuntu y OpenSUSE:
 * El motivo es porque Wicked no está cogiendo correctamente la configuración de red vía DHCP. Pendiente de revisar.
 
 ---
-
 ## Monitorización
 
 * El software de monitorización que vamos a usar es **Veyon** (Anteriormente se llamaba iTalc)

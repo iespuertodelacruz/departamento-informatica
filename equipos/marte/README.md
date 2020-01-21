@@ -43,19 +43,20 @@ Actualizar todos los equipos al comienzo del curso:
 * `sudo zypper refresh`, refrescar repositorios.
 * `sudo zypper update`, actualizar paquetes.
 
+Consultar [script de instalación](./files/installer.sh) para ver el detalle de los paquetes software instalados.
+
+> NOTA: Se está creando la versión 2 del script [installer-v2.rb](files/installer-v2.rb)
+
+Además se han realizado las siguientes personalizaciones:
+
 | Software        | Detalle                           |
 | --------------- | --------------------------------- |
 | SSOO base       | [OpenSUSE Leap 15.0](opensuse.md) |
-| Servicio de red | Usar NetworkManager en lugar de Wicked |
 | Repositorios agregados | [atom](./files/atom.repo), [Education](./files/Education.repo), [virtualbox](./files/virtualbox.repo), [visualcode](./files/visualcode.repo) y [vagrant-2.2.6.repo](./files/vagrant-2.2.6.repo) |
-| Aplicaciones instaladas | Consultar [script de instalación](./files/install.sh) para ver el detalle del software instalado. |
-
-Otras aplicaciones instaladas:
-* Consultar la guía para configurar el montorizador [Veyon](../general/veyon.md)
-* Consultar la guía para instalar [linuxbrew](linuxbrew.md) en OpenSUSE.
+| Monitorización  | Guía del montorizador [Veyon](../general/veyon.md) |
+| LinuxBrew       | Guía para instalar [linuxbrew](linuxbrew.md) en OpenSUSE  |
 
 ---
-
 ## 2.2 Usuarios
 
 | Nombre | Descripción |
