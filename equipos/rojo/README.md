@@ -1,32 +1,64 @@
 
+`Actualmente están en el aula comodín1.`
+
+---
 # Equipos ROJO
 
-Actualmente están en el aula comodín1.
-
-# Relación de equipos
-
-PCs HP:
-* BIOS: legacy
-* RAM: 4GB
-* CPU: 64 bit
-* Disco: HDD 466GB
+Relación de equipos:
 
 | Fila | PC | MAC               | Observaciones            |
 | ---- | -- | ----------------- | ------------------------ |
+| d    | 01 |                  | |
+| d    | 02 |                  | Problemas con la tarjeta gráfica |
+| d    | 03 |                  | Pantalla OK pero sin imagen. PDTE Cambiar t.gráfica |
 |      |    |                  | |
+|      | 05 |                  | Problemas con MV |
+|      |    |                  | |
+|      | 07 |                  | Problema GUEST. Para INFO DAM está OK |
+|      | 08 |                  | |
+|      | 09 |                  | Problema GUEST |
+|      | 10 |                  | |
+|      | 11 |                  | OK para INFO DAM |
+|      | 12 |                  | |
+|      | 13 |                  | Problema GUEST. Para INFO DAM está OK |
+|      | 14 |                  | Problemas de teclado |
+|      |    |                  | |
+|      |    |                  | |
+|      |    |                  | |
+|      |    |                  | |
+|      |    |                  | |
+|      |    |                  | |
+|      | 21 |                  | Poca RAM para virtualizar Ubuntu 18.4 |
 | a    | 22 | 20-CF-30-8E-A2-EF | | PC profesor |
 | a    | 23 | 00:24:81:21:6c:33 | |
 | a    | 24 | 00:24:81:21:a5:b3 | Problemas con el teclado. Tecla CTRL |
 | a    | 25 | 00:24:81:21:a4:ab | |
 | a    | 26 | 00:24:81:21:a4:ce | Problemas con el teclado |
-| a    | 27 | 00:24:81:21:a4:b8 | Error interno SO. Pantalla mal |
-| a    | 28 | 00:24:81:21:a5:97 | Problemas con el teclado |
+| a    | 27 | 00:24:81:21:a4:b8 | Error interno SO. Pantalla mal. Problema GUEST. Máquina lenta |
+| a    | 28 | 00:24:81:21:a5:97 | Problemas con el teclado. Problema GUEST |
+
+## Hardware 
+
+HP Compaq:
+* BIOS: legacy
+* RAM: 4GB
+* CPU: 64 bit
+* Disco: 466GB HDD
+* SO: Xubuntu 16.04
+
+HP Compaq DC7900:
+* BIOS: legacy
+* RAM: 2GB
+* CPU: Core2Duo E8500 3.16 GHz
+* Disco: 250GB HDD
+* SO: Xubuntu 16.04
 
 PC profesor:
 * BIOS: legacy
 * RAM 2GB
 * CPU: 32 bits
 * Disco : 931 GB
+* SO: Windows
 
 ---
 # Usuarios
@@ -41,6 +73,7 @@ PC profesor:
 * super
 * tfy1
 
+Información sobre consumo de las cuentas de usuario:
 ```
 # du -sh /home/*
 1,1G	alumno
@@ -56,6 +89,7 @@ PC profesor:
 
 ---
 # Discos y particiones
+
 
 ```
 $ sudo fdisk -l
@@ -82,7 +116,7 @@ S.ficheros     Tipo     Tamaño Usados  Disp Uso% Montado en
 ```
 
 ---
-# Software
+## Software
 
 Se usa el siguiente [Script](files/script-instalar-aula206_v3.rb) de instalación. Además hay software que aparece en el usuario dam3:
 * Android Studio
