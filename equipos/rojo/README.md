@@ -124,6 +124,7 @@ Se usa el siguiente [Script](files/script-instalar-aula206_v3.rb) de instalació
 * NetBeans
 * Eclipse
 * sqldeveloper en dam2?
+* Wine: Sketchup, VirtualDub
 
 Software que aparece en el directorio /opt
 ```
