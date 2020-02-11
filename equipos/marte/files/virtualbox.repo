@@ -1,8 +1,8 @@
 [virtualbox]
-name=VirtualBox for openSUSE $releasever - $basearch
+name=VirtualBox for openSUSE openSUSE 15.0 - x86_64
 enabled=1
 autorefresh=1
-baseurl=http://download.virtualbox.org/virtualbox/rpm/opensuse/$releasever/$basearch
+baseurl=http://download.virtualbox.org/virtualbox/rpm/opensuse/15.0/x86_64/
 type=rpm-md
 priority=120
 gpgcheck=1
