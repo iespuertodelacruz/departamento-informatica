@@ -1,13 +1,26 @@
 
-# 1. Instalación de linuxbrew en opensuse
+```
+Curso: 201920
+Autor: Juan Carlos
+```
 
-* `su -`, primero pasando a superusuario.
+---
+# 1. Instalación de linuxbrew en OpenSUSE
+
+**Como superusuario**
+
+* `su -`, nos convertimos a superusuario.
 * `zypper install -t pattern devel_C_C++`, esta parece no necesaria por ya instalada.
 * `zypper install git curl file`, también ya instalado.
 * `su - super`
-* `sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"`, se solicita pass para sudo y luego ya lo hace.
+* `sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"`, se solicita password para sudo y luego ya lo hace.
 
-Cambiando a usuario daw para establecer path etc en profile:
+> DUDA: ¿La descarga y/o instalación de linuxbrew se está haciendo sobre /home/linuxbrew?
+
+**Como usuario daw**
+
+Cambiando a usuario `daw` para configurar variables de entorno (PATH y ETC) en profile:
+
 ```
 exit
 su - daw
@@ -16,10 +29,11 @@ eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 exit
 ```
 
-Haciendo propietario de la carpeta instalada al usuario
+* `chown daw /home/linuxbrew/ -R`, haciendo propietario de la carpeta instalada al usuario `daw`.
+
+> DUDA: ¿Entonces linuxbrew sólo está disponible para el usuario daw? En tal caso, por qué no haber puesto la ruta en /home/daw/linuxbrew?
 
 ```
-chown daw /home/linuxbrew/ -R
 su - daw
 source .profile
 brew install gcc
@@ -44,7 +58,7 @@ Las últimas líneas son importantes para composer.
 ---
 # 2. Acciones para prevenir problemas con algunas aplicaciones
 
-Lo siguiente es para diferentes problemas observados con la instalación de mysql, apache, php, etc. No es preciso para la instalación en sí de linuxbrew.
+Lo siguiente es para prevenir diferentes problemas observados con la instalación de los programas: `mysql`, `apache` y `php`. No es preciso para la instalación en sí de linuxbrew.
 
 ## 2.1 Instalar mysql@5.7
 
@@ -78,17 +92,18 @@ GRANT ALL PRIVILEGES ON *.* TO admin@localhost
            IDENTIFIED BY 'something' WITH GRANT OPTION;
 ```
 ``
-Si problemas entrar con skip-grant-tables:
+Si hay problemas entrar con skip-grant-tables:
 * Lanzar `/home/linuxbrew/.linuxbrew/opt/mysql-client/bin/mysql_upgrade`
-* Luego parar servidor, entrar normal
+* Luego parar servidor, entrar normal.
 
 ## 2.2 Instalar apache2
 
-* En el fichero:  `/home/linuxbrew/.linuxbrew/etc/httpd/httpd.conf`
-cambiar: User a daw y Group a users.
-* En el fichero:  `/home/linuxbrew/.linuxbrew/etc/httpd/httpd.conf`
+En el fichero `/home/linuxbrew/.linuxbrew/etc/httpd/httpd.conf`:
+* Cambiar:
+    * User a daw y
+    * Group a users.
+* To enable PHP in Apache add the following to httpd.conf and restart Apache:
 
-To enable PHP in Apache add the following to httpd.conf and restart Apache:
 ```
     LoadModule php7_module /home/linuxbrew/.linuxbrew/opt/php/lib/httpd/modules/libphp7.so
 
@@ -100,6 +115,7 @@ To enable PHP in Apache add the following to httpd.conf and restart Apache:
 Para phpmyadmin:
 * To enable phpMyAdmin in Apache, add the following to httpd.conf and
 restart Apache:
+
 ```
     Alias /phpmyadmin /home/linuxbrew/.linuxbrew/share/phpmyadmin
     <Directory /home/linuxbrew/.linuxbrew/share/phpmyadmin/>
@@ -114,12 +130,14 @@ restart Apache:
         </IfModule>
     </Directory>
 ```
+
 * Then open http://localhost/phpmyadmin
 
 ## 2.3 Para instalar xdebug en php
 
 * `pecl install xdebug`
 * Luego hay que modificar php.ini al comienzo del fichero:
+
 ```
 [xDebug]
 zend_extension="/home/linuxbrew/.linuxbrew/Cellar/php/7.3.10/pecl/20180731/xdebug.so"
