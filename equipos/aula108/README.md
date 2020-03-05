@@ -1,32 +1,35 @@
 
-# Equipos AMARILLO
+```
+Curso : 201920
+```
 
-| Parámetro   | Valor |
-| ----------- | ----- |
-| Responsable | MEDUSA |
-| Uso         | Todo el centro |
-| Cantidad    | 31    |
-| Adquisición | ? |
-| Comprado en | ? |
+----
+# Equipos aula108
+
+| Parámetro        | Valor |
+| ---------------- | ----- |
+| Responsable      | MEDUSA |
+| Uso              | Todo el centro |
+| Cantidad         | 31    |
+| Adquisición      | 2018-2019 |
+| Suministrado por | La consejería |
 
 ---
-
 # Hardware
 
-| Hardware | Descripción |
-| -------- | -------------- |
-| CPU      | ?
-| RAM      | ? GB |
-| Disco    | ? GB |
+| Hardware | Descripción          |
+| -------- | -------------------- |
+| CPU      | i5-6500 (4 core)     |
+| RAM      | ? GB                 |
+| Disco    | 465 GB (Usado 123 GB)|
 | T Red    | ? |
 | Monitor  | ? |
 
 ---
-
 # Software
 
-| Software | Descripción |
-| -------- | ----------- |
-| SSOO     | Windows     |
+| Software | Descripción                            |
+| -------- | -------------------------------------- |
+| SSOO     | Windows 10. Dentro del dominio Medusa  |
 
-* Equipos bajo un dominio MEDUSA.
+
