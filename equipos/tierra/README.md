@@ -24,7 +24,6 @@
 | Monitor  | |
 
 ---
-
 # 2. Software
 
 ## 2.1 Sistema y aplicaciones
@@ -32,7 +31,7 @@
 | Software | Descripción          |
 | -------- | -------------------- |
 | SSOO     | Lubuntu 16.04.05 LTS |
-| italc    | Monitorización       |
+| Veyon    | Monitorización       |
 
 * Consultar script de instalación para ver el detalle del software instalado.
 * Consultar la guía para configurar el montorizador [Veyon](../general/veyon.md)
@@ -47,20 +46,16 @@ Actualizar VirtualBox:
 * Como VirtualBox no se instaló mediante repositorio (Es lo recomendado), sino por descargar del fichero deb, entonces debemos actualizar manualmente de la versión 5 a la 6.
 * Las Guest Additions de la versión 5 que estaba instaladas ya no funcionan (en la lista de extensiones aparece con una exclamación). Se prueba a cargar una máquina virtual del curso pasado y no funciona. Se procede a desinstalar el paquete de extensiones y se instala el de la versión 6. Se vuelve a cargar la máquina virtual y ahora sí parece funcionar bien.
 
----
-
 ## 2.3 Usuarios
 
-| Nombre   | Home           | Descripción          |
-| -------- | -------------- |--------------------- |
+| Nombre   | Home           | Descripción                              |
+| -------- | -------------- |----------------------------------------- |
 | asir     | /mnt/asir/home | Turno de mañana por alumnos y profesores |
-| daw      | /mnt/daw/home  | Turno de tarde por alumnos y profesores |
-| super    | /home/super    | Sólo para tareas sysadmin del sistema |
-| root     | /root          | Sólo para tareas sysadmin del sistema |
+| daw      | /mnt/daw/home  | Turno de tarde por alumnos y profesores  |
+| super    | /home/super    | Sólo para tareas sysadmin del sistema    |
+| root     | /root          | Sólo para tareas sysadmin del sistema    |
 
 * Para "limpiar" los home de los usuarios, usamos ficheros tar con la copia de seguridad que se hizo nada más instalar el sistema.
-
----
 
 # 2.4 Particiones
 
