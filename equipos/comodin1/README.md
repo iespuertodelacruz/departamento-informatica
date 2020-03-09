@@ -6,38 +6,38 @@
 
 Relación de equipos:
 
-| Fila | PC | MAC               | Estado | Observaciones            |
-| ---- | -- | ----------------- | ------ | ------------------------ |
-| d    | 01 |                   | ?      | |
-| d    | 02 |                   | rev    | Problemas con la tarjeta gráfica |
+| Fila | PC | MAC               | Estado      | Observaciones            |
+| ---- | -- | ----------------- | ----------- | ------------------------ |
+| d    | 01 |                   | ?           | |
+| d    | 02 |                   | en uso, rev | Prob la tarjeta gráfica |
 | d    | 03 |                   | rev    | Pantalla OK pero sin imagen. PDTE Cambiar t.gráfica |
 |      |    |                   | ?      | |
-|      | 05 |                   | rev    | Problemas con MV |
+|      | 05 |                   | en uso, rev | Problemas con MV |
 |      |    |                   | ?      | |
-|      | 07 |                   | rev    | Problema GUEST. Para INFO DAM está OK |
+|      | 07 |                   | en uso, rev | Problema GUEST. Para DAM está OK |
 |      | 08 |                   | ? ||
 |      | 09 |                   | rev    | Problema GUEST |
 |      | 10 |                   | ?      ||
-|      | 11 |                   |        | OK para INFO DAM |
+|      | 11 |                   | en uso      | OK para INFO DAM |
 |      | 12 |                   | ?      ||
-|      | 13 |                   | rev    | Problema GUEST. Para INFO DAM está OK |
-|      | 14 |                   | rev    | Problemas de teclado |
+|      | 13 |                   | en uso, rev | Problema GUEST. Para DAM está OK |
+|      | 14 |                   | en uso, rev | Problemas de teclado |
 |      |    |                   | ? ||
 |      |    |                   | ? ||
 |      |    |                   | ? ||
 |      |    |                   | ? ||
 |      |    |                   | ? ||
 |      |    |                   | ? ||
-|      | 21 |                   |   | Poca RAM para virtualizar Ubuntu 18.4 |
+|      | 21 |                   | en uso  | Poca RAM para virtualizar Ubuntu 18.4 |
 | a    | 22 | 20-CF-30-8E-A2-EF |   | PC profesor |
 | a    | 23 | 00:24:81:21:6c:33 |   ||
 | a    | 24 | 00:24:81:21:a5:b3 | rev   | Problemas con el teclado. Tecla CTRL |
 | a    | 25 | 00:24:81:21:a4:ab |       |
 | a    | 26 | 00:24:81:21:a4:ce | rev   | Problemas con el teclado |
-| a    | 27 | 00:24:81:21:a4:b8 | rev   | Error interno SO. Pantalla mal. Problema GUEST. Máquina lenta |
+| a    | 27 | 00:24:81:21:a4:b8 | en uso, rev | Error interno SO. Pantalla mal. Problema GUEST. Máquina lenta |
 | a    | 28 | 00:24:81:21:a5:97 | rev   | Problemas con el teclado. Problema GUEST |
 
-## Hardware 
+## Hardware
 
 HP Compaq:
 * BIOS: legacy
