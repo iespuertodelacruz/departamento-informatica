@@ -20,7 +20,7 @@ Relación de equipos:
 |      | 10 |                   | ?      ||
 |      | 11 |                   | en uso      | OK para INFO DAM |
 |      | 12 |                   | ?      ||
-|      | 13 |                   | en uso, rev | Problema GUEST. Para DAM está OK |
+|      | 13 |                   | en uso | Para DAM está OK |
 |      | 14 |                   | en uso, rev | Problemas de teclado |
 |      |    |                   | ? ||
 |      |    |                   | ? ||
