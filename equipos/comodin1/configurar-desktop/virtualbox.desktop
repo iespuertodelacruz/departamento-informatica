@@ -1,0 +1,10 @@
+[Desktop Entry]
+# The names/descriptions should really be better
+Name=virtualbox
+Comment=virtualbox
+Exec=/usr/share/xsessions/virtualbox.sh
+# Icon=
+Type=Application
+Name[es_ES]=virtualbox
+Comment[es_ES]=virtualbox
+Terminal=false
