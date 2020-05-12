@@ -25,11 +25,11 @@ Organización:
 
 ## Software
 
-* Comunicaciones: Telegram Desktop
-* Teleformación: Moodle/Classroom, Campus/EVAGD
-* Videoconferencias: Blackboard, Jitsi
+* [Comunicaciones on line](telegram.md): Telegram
+* [Teleformación](moodle.md): Usaremos la plataforma Moodle Campus/EVAGD.
+* [Videoconferencias](videoconferencias.md)
 * Aplicaciones con licencia: Libreofice, PDF, ZIP
-* Editores de vídeo: Shotcut, kdenlive, virtualdub, cinelerra. Window MOvie maker.
+* Editores de vídeo: Shotcut, kdenlive, virtualdub, cinelerra. Window Movie maker.
 
 ## Hardware
 
