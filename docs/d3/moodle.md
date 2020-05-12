@@ -1,12 +1,6 @@
 
 
-# Duda
+# Dudas
 
-Problema: Tengo un curso Moodle, donde el profesor puede ver el bloque "Latest news", pero los alumnos no pueden verlo.
-
-Enlace de interés:
-* https://moodle.org/mod/forum/discuss.php?d=364828
-
-Los bloques (como Latest new) se pueden configurar para que sean visibles o invisibles a determinados roles (Esto es profesor, estudiante, etc.)
-
-* Entrar al curso y activar el modo de edición.
+**Problema**: Tengo un curso Moodle, donde el profesor puede ver el bloque `Últimas noticias`, pero los alumnos no pueden verlo.
+* El bloque `Últimas noticias` está vinculado con el foro `Novedades`. Debemos hacer que el foro `Novedades` esté visible para los alumnos.
