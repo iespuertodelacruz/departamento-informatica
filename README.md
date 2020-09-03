@@ -12,4 +12,3 @@ Objetivo    : Información y documentación del departamento
 | [docs](./docs) | Documentación general: jornadas de acogida, etc. |
 | [equipos](./equipos) | Información sobre la instalación de los equipos |
 | [servidores](./servidores) | Información sobre la instalación de los servidores |
-| [seguimiento](./seguimiento) | Seguimiento de las incidencias |
