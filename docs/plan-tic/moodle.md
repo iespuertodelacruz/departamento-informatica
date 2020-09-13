@@ -30,6 +30,21 @@ Para crear un nuevo curso Moodle para nuestra asignatura/módulo hacemos lo sigu
 * Entrar en la plataforma [Moodle](http://www3.gobiernodecanarias.org/medusa/eforma/campus/)
 * En la esquina superior derecha, donde aparece nuestro nombre hay un desplegable
 que nos permite ir a la [consola de servicios](https://www3.gobiernodecanarias.org/educacion/cau_ce/servicios/mis-servicios/aula-virtual-campus/menu-principal#forward).
+* `Crear aulas virtuales`
+* Elegir el número de aulas que queremos crear.
+* Escribir el nombre del aula de la siguiente forma: `[20/21] ASIR1 - IDP - Implantación de sistemas operativos`. Primero curso actual, nivel educativo, código de la materia, nombre de la materia.
+* `Siguiente`
+* Aceptar los términos de las condiciones y `siguiente`.
+* `Enviar solicitud`
+
+Si nos hemos equivocado con el nombre del aula o queremos eliminarla:
+* Ir a la consola de servicios.
+* `Gestionar las aulas virtuales`
+* Marcamos el aula que queremos modificar/eliminar.
+    * Pulsar `Nombre` para cambiar el nombre del aula.
+    * Pulsar `Borrar Aula` para eliminar el aula.
+* Se nos pide confirmación.
+* `Enviar solicitud`
 
 # Videoconferencias
 
