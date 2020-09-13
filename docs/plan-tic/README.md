@@ -44,11 +44,13 @@ para todas las asignaturas.
 ## 2.2 Comunicaciones
 
 Para las comunicaciones tendremos las siguientes herramientas:
-* Comunicados de grupo: Para enviar mensajes visibles a todos los participantes
-del grupo-clase se usarán los foros dentro de los cursos del Moodle.
-* Comunicados individuales: Para enviar mensajes privados a un único participante
-podremos usar: (a) Mensajes internos del Moodle, (b) Correo electrónico. Preferiblemente
-usaremos la opción (a) puesto que queda registrado en el propio Moodle.
-* Mensajes urgentes: Para los comunicados urgentes haremos uso del grupo de Telegram
+* **Comunicaciones de grupo**: Estas comunicaciones serán visibles únicamente a todos
+los todos los miembros del grupo-clase, para ello se usarán foros creados dentro de cada curso de Moodle.
+* **Comunicaciones privadas o individuales**: Estas comunicaciones son visibles únicamente entre emisor y receptor. Para enviar mensajes privados a un único participante podemos usar:
+    * (a) Mensajes internos del Moodle. Preferiblemente usaremos esta opción puesto que queda registrada en el propio Moodle.
+    * (b) Correo electrónico.
+* **Mensajes urgentes**: Para los comunicados urgentes haremos uso del grupo de Telegram
 correspondiente a nuestro grupo-clase. Usaremos esta vía unicamente para temas
 urgentes relacionados con el centro.
+
+> Consultar más [información sobre Telegram](telegram.md)
