@@ -4,8 +4,8 @@
 
 Uso de la herramienta de videoconferencias **Blackboard Collaborate Ultra**.
 
-1. [Crear videoconferencia](#crear)
-2. [Crear sesiones](#crear-sesiones)
+1. [Crear videoconferencia](#1-crear)
+2. [Crear sesiones](#2-crear-sesiones)
 
 ## Crear
 
