@@ -5,8 +5,16 @@
 Moodle es una plataforma de eLearning o de apoyo a la enseñanza. La Consejería proporciona
 dos plataformas Moodle, y la que nosotros vamos a usar se llama **Campus Virtual**.
 
+* [Empezar](#empezar)
 * [Videoconferencias](#videoconferencias)
 * [Dudas](#dudas)
+
+# Empezar
+
+Para entrar a la plataforma Moodle hacemos lo siguiente:
+* Abrir un navegador Web (Preferiblemente Firefox).
+* Ir a la siguiente [página web](http://www3.gobiernodecanarias.org/medusa/eforma/campus/).
+* Entraremos con nuestro usuario/clave de Pincel Ekade.
 
 # Videoconferencias
 
@@ -49,7 +57,7 @@ Ya tenemos creada la videoconferencia.
 
 ## Entrar el la videoconferencia
 
-> Esto lo hacen el profesor y alumnos
+> Esto lo hace todo el grupo
 
 * Entrar en la plataforma Moodle [Campus Virtual](http://www3.gobiernodecanarias.org/medusa/eforma/campus/).
 * Entrar en nuestro curso de Moodle.
