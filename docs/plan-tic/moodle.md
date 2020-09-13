@@ -5,16 +5,31 @@
 Moodle es una plataforma de eLearning o de apoyo a la enseñanza. La Consejería proporciona
 dos plataformas Moodle, y la que nosotros vamos a usar se llama **Campus Virtual**.
 
-* [Empezar](#empezar)
+* [Entrar en la plataforma](#entrar-en-la-plataforma)
+* [Crear nuevos cursos](#crear-nuevos-cursos)
 * [Videoconferencias](#videoconferencias)
 * [Dudas](#dudas)
 
-# Empezar
+# Empezar en la plataforma
 
 Para entrar a la plataforma Moodle hacemos lo siguiente:
 * Abrir un navegador Web (Preferiblemente Firefox).
 * Ir a la siguiente [página web](http://www3.gobiernodecanarias.org/medusa/eforma/campus/).
-* Entraremos con nuestro usuario/clave de Pincel Ekade.
+* Accederemos con nuestro usuario/clave de Pincel Ekade.
+* Una vez dentro, página principal de Moodle nos muestra un listado de todos los asignaturas/módulos
+en los que estamos participando.
+* Pulsando en el nombre de cada asignatura iremos a su página principal, donde veremos
+sus contenidos, actividades, foros, salas de videoconferencia, etc.
+* Para salir, recordar que siempre debemos cerrar la sesión. Para ello vamos a
+la esquina superior derecha y donde aparece nuestro nombre hay un desplegable que nos
+ofrece la opción `salir`.
+
+# Crear nuevos cursos
+
+Para crear un nuevo curso Moodle para nuestra asignatura/módulo hacemos lo siguiente:
+* Entrar en la plataforma [Moodle](http://www3.gobiernodecanarias.org/medusa/eforma/campus/)
+* En la esquina superior derecha, donde aparece nuestro nombre hay un desplegable
+que nos permite ir a la [consola de servicios](https://www3.gobiernodecanarias.org/educacion/cau_ce/servicios/mis-servicios/aula-virtual-campus/menu-principal#forward).
 
 # Videoconferencias
 
