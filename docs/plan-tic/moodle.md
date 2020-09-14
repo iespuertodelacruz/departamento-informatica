@@ -5,26 +5,69 @@
 Moodle es una plataforma de eLearning o de apoyo a la enseñanza. La Consejería proporciona
 dos plataformas Moodle, y la que nosotros vamos a usar se llama **Campus Virtual**.
 
-* [Entrar en la plataforma](#entrar-en-la-plataforma)
-* [Crear nuevos cursos](#crear-nuevos-cursos)
-* [Videoconferencias](#videoconferencias)
-* [Dudas](#dudas)
+Esta guía se irá modificando y ampliando a medida que avance el curso.
 
-# Empezar en la plataforma
+Alumnos:
+* [Entrar en la plataforma](#entrar-en-la-plataforma)
+* [Entrar en una videoconferencia](#entrar-en-una-videoconferencia)
+* [Entregar tarea](#entregar-tarea)
+
+Profesores:
+* [Crear nuevos cursos](#crear-nuevos-cursos)
+* [Crear videoconferencia](#crear-videoconferencia)
+* [Foro novedades](#foro-novedades)
+
+---
+
+# Alumnos
+
+## Entrar en la plataforma
 
 Para entrar a la plataforma Moodle hacemos lo siguiente:
 * Abrir un navegador Web (Preferiblemente Firefox).
-* Ir a la siguiente [página web](http://www3.gobiernodecanarias.org/medusa/eforma/campus/).
+* Ir a la siguiente [página web](http://www3.gobiernodecanarias.org/medusa/eforma/campus/). Otra forma de acceder al Campus Virtual es ir a la `página web del centro -> Alumnado -> Campus Virtual`.
+
+![](images/moodle-url-campus.png)
+
 * Accederemos con nuestro usuario/clave de Pincel Ekade.
-* Una vez dentro, página principal de Moodle nos muestra un listado de todos los asignaturas/módulos
-en los que estamos participando.
-* Pulsando en el nombre de cada asignatura iremos a su página principal, donde veremos
+
+![](images/moodle-entrar-campus.png)
+
+* Una vez dentro vemos un listado con las asignaturas/módulos en los que estamos participando.
+* Pulsando en el nombre de cada asignatura entraremos en la página principal, donde veremos
 sus contenidos, actividades, foros, salas de videoconferencia, etc.
 * Para salir, recordar que siempre debemos cerrar la sesión. Para ello vamos a
 la esquina superior derecha y donde aparece nuestro nombre hay un desplegable que nos
 ofrece la opción `salir`.
 
-# Crear nuevos cursos
+## Entrar en una videoconferencia
+
+Para acceder a las sesiones online de nuestra asignatura haremos lo siguiente:
+* Entrar en la plataforma Moodle [Campus Virtual](http://www3.gobiernodecanarias.org/medusa/eforma/campus/).
+* Entrar en nuestro curso (asignatura) de Moodle.
+* Pulsar en la sala de videoconferencia.
+* Unirse a la sesión que haya creado el profesor.
+
+## Entregar tarea
+
+Para entregar una tarea:
+* Entramos en Campus.
+* Entramos dentro del curso correspondiente a la asignatura.
+* Buscamos la tarea (Una imagen de una mano entregando un papel), y pulsamos.
+
+![](images/moodle-buscar-tarea.png)
+
+* Pulsamos en el botón `Agregar entrega`.
+* Arrastramos los archivos que vamos a entregar dentro del recuadro blanco.
+* Pulsamos `Guardar cambios` para terminar.
+
+![](images/moodle-entregar-tarea.png)
+
+---
+
+# Profesores
+
+## Crear nuevos cursos
 
 Para crear un nuevo curso Moodle para nuestra asignatura/módulo hacemos lo siguiente:
 * Entrar en la plataforma [Moodle](http://www3.gobiernodecanarias.org/medusa/eforma/campus/)
@@ -46,16 +89,16 @@ Si nos hemos equivocado con el nombre del aula o queremos eliminarla:
 * Se nos pide confirmación.
 * `Enviar solicitud`
 
-# Videoconferencias
+## Crear videoconferencia
 
-Campus nos permite crear salas de videoconferencia para compartir con nuestro grupo-clase.
-Los pasos a seguir son los siguientes:
+Campus nos permite crear salas de videoconferencia para compartir sesiones online
+con nuestro grupo-clase. Los pasos a seguir son los siguientes:
 
 1. El profesor crea la sala de videoconferencia dentro del curso Moodle.
 2. El profesor crea las sesiones y comunica a los alumnos cuando se deben conectar a la sala.
 3. Profesor y alumnos entrar a la videoconferencia.
 
-## Crear la sala de videoconferencia
+**Crear la sala de videoconferencia**
 
 > Esto lo hace el profesor
 
@@ -74,28 +117,21 @@ Los pasos a seguir son los siguientes:
 
 Ya tenemos creada la videoconferencia.
 
-## Crear sesiones
+**Crear sesiones**
 
 > Esto lo hace el profesor
 
-* Entrar en videoconferencia.
+Podemos crear una sesión que dure todo el curso, o bien crear sesiones el
+día y hora que tengamos planificado hacer una reunión online con nuestro grupo.
+* Entrar en la sala de videoconferencia.
 * Crear sesión.
 * Rellenar formulario con:
     * Nombre de la sesión
     * Fecha inicio/fin
     * Guardar
 
-## Entrar el la videoconferencia
+## Foro Novedades
 
-> Esto lo hace todo el grupo
+Por defecto, todos los cursos Moodle tienen un foro `Novedades`. Dicho foro está vinculado con el bloque `Últimas Noticias`, de modo que todos los mensajes publicados en el foro serán visibles también desde el bloque.
 
-* Entrar en la plataforma Moodle [Campus Virtual](http://www3.gobiernodecanarias.org/medusa/eforma/campus/).
-* Entrar en nuestro curso de Moodle.
-* Pulsar en la sala de videoconferencia.
-* Unirse a la sesión.
-
----
-# Dudas
-
-**Problema**: Tengo un curso Moodle, donde el profesor puede ver el bloque `Últimas noticias`, pero los alumnos no pueden verlo.
-* El bloque `Últimas noticias` está vinculado con el foro `Novedades`. Debemos hacer que el foro `Novedades` esté visible para los alumnos.
+Por tanto, si queremos que el alumnado vea los mensajes en el bloque, entonces el foro debe estar también visible para los alumnos.
