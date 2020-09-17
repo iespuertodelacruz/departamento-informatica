@@ -15,6 +15,7 @@ Alumnos:
 Profesores:
 * [Crear nuevos cursos](#crear-nuevos-cursos)
 * [Crear videoconferencia](#crear-videoconferencia)
+* [Matricular al alumnado](#matricular-al-alumnado)
 * [Foro novedades](#foro-novedades)
 
 ---
@@ -129,6 +130,20 @@ día y hora que tengamos planificado hacer una reunión online con nuestro grupo
     * Nombre de la sesión
     * Fecha inicio/fin
     * Guardar
+
+## Matricular al alumnado
+
+> En el caso,de que no aparezcan datos de alumnos, tendremos que esperar a que termine el proceso de matrículación en Secretaría, y se hay cargado la información desde Pincel Ekade.
+
+Para matricular a nuestro alumando y que tenga acceso a nuestro curso Moodle hacemos lo siguiente:
+* Entrar en la plataforma [Moodle](http://www3.gobiernodecanarias.org/medusa/eforma/campus/)
+* En la esquina superior derecha, donde aparece nuestro nombre hay un desplegable
+que nos permite ir a la [consola de servicios](https://www3.gobiernodecanarias.org/educacion/cau_ce/servicios/mis-servicios/aula-virtual-campus/menu-principal#forward).
+* `Gestionar las matrículas de las aulas virtuales`
+* Seleccionamos nuestra aula virtual y `Siguiente`.
+* Pulsamos en `+ Alta usuario/a`.
+* Pulsamos en `Alumnado`.
+* Buscamos nuestro grupo y lo seleccionamos. 
 
 ## Foro Novedades
 
