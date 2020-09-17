@@ -1,12 +1,6 @@
 
 # Equipos Aula 206
 
-Esquema de puestos disponibles según las medidas COVID:
-
-![](images/puestos-covid.png)
-
-El aforo máximo es de 15 alumnos. En el caso de quedar libre el puesto 21 se podría usar la pizarra del aula.
-
 | Parámetro   | Valor          |
 | ----------- | -------------- |
 | Responsable | Centro         |
