@@ -142,8 +142,18 @@ que nos permite ir a la [consola de servicios](https://www3.gobiernodecanarias.o
 * `Gestionar las matrículas de las aulas virtuales`
 * Seleccionamos nuestra aula virtual y `Siguiente`.
 * Pulsamos en `+ Alta usuario/a`.
-* Pulsamos en `Alumnado`.
-* Buscamos nuestro grupo y lo seleccionamos. 
+* Elegimos `Alumnado`.
+* Seleccionamos nuestro grupo para aplicar un filtrado.
+
+![](images/moodle-matricular-grupo.png)
+
+* Seleccionamos todos los alumnos que aparecen como resultado de aplicar filtro. Deben corresponder con los alumnos de nuestro grupo.
+
+> Revisar que los datos son correctos. Lo alumnos sin cuenta de correo en Pincel Ekade
+no se podrán matricular en Campus hasta que no se complete la información.
+
+* `Aceptar`
+* `Enviar solicitud`
 
 ## Foro Novedades
 
