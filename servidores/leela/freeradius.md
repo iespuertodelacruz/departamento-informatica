@@ -70,7 +70,7 @@ Ubicación | IP | Nombre corto/SSID | MAC
 Aula 103 | 172.18.0.2* | aula103 | 68-FF-7B-0F-3C-A8
 Aula 109 | 172.19.0.2 | aula109 | 0C-80-63-D7-1E-52
 
-*Debería ser la 172.13.0.2 pero aún no se ha hecho la migración de la red del aula 103 y tiene el direccionamiento antiguo (del aula 108).
+> Debería ser la 172.13.0.2 pero aún no se ha hecho la migración de la red del aula 103 y tiene el direccionamiento antiguo (del aula 108).
 
 ## Usuarios
 
