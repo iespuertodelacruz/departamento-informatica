@@ -151,6 +151,9 @@ que nos permite ir a la [consola de servicios](https://www3.gobiernodecanarias.o
 
 > Revisar que los datos son correctos. Lo alumnos sin cuenta de correo en Pincel Ekade
 no se podrán matricular en Campus hasta que no se complete la información.
+>
+> En CFGS cada tutor debería hacer un listado nombre de alumno y correo de su grupo.
+Y solicitar las correcciones en Pincel Ekade enviando un email a `admision@iespuertodelacruz.es`.
 
 * `Aceptar`
 * `Enviar solicitud`
