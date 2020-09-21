@@ -16,6 +16,7 @@ Profesores:
 * [Crear nuevos cursos](#crear-nuevos-cursos)
 * [Crear videoconferencia](#crear-videoconferencia)
 * [Matricular al alumnado](#matricular-al-alumnado)
+* [Agrupamientos](#agrupamientos)
 * [Foro novedades](#foro-novedades)
 
 ---
@@ -157,6 +158,35 @@ Y solicitar las correcciones en Pincel Ekade enviando un email a `admision@iespu
 
 * `Aceptar`
 * `Enviar solicitud`
+
+## Agrupamientos
+
+Los agrupamientos sirven para crear grupos dentro de un mismo curso de Campus (Moodle).
+Por ejemplo si impartimos una materia de igual forma en el A y el B. Podríamos crear un
+único curso Moodle para la materia y dentro podemos (si lo consideramos comnveniente) separar
+a los alumnos en grupos separados.
+
+Veamos el proceso para crear agrupamientos:
+* Los alumnos deben estar ya matriculados en nuestro curso.
+* Ir a `Administración -> Usuarios -> Grupos`.
+* Ir a `Crear Grupo`, para crear "grupo A" y "grupo B" (Por ejemplo).
+
+![](images/moodle-grupos-crear.png)
+
+* Seleccionar un grupo.
+* Ir a `Agregar/quitar usuarios` para asignar los usuarios que correspondan.
+
+![](images/moodle-grupos-usuarios.png)
+
+Podemos usar los agrupamientos para mantener las actividades separadas y también para crear restricciones. Por ejemplo, si queremos tenemos 2 salas de video conferencia separadas para cada grupo. Haremos lo siguiente:
+
+* `Activar edicíón`
+* Ir a `Editar ajustes` de la videoconferencia.
+* En la sección de **Restricciones de acceso**, crearemos un a restricción para permitir el acceso a uno de los grupos.
+
+![](images/moodle-restricciones.png)
+
+> En general, usaremos la configuración de restricciones cuando queremos limitar el acceso a alguno de los elementos de nuestro curso Moodle.
 
 ## Foro Novedades
 
