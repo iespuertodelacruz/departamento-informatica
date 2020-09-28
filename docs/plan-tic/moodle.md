@@ -155,7 +155,7 @@ que nos permite ir a la [consola de servicios](https://www3.gobiernodecanarias.o
 no se podrán matricular en Campus hasta que no se complete la información.
 >
 > En CFGS cada tutor debería hacer un listado nombre de alumno y correo de su grupo.
-Y solicitar las correcciones en Pincel Ekade enviando un email a `admision@iespuertodelacruz.es`.
+Y solicitar las correcciones en Pincel Ekade enviando un email a `administracion@iespuertodelacruz.es`.
 
 * `Aceptar`
 * `Enviar solicitud`
@@ -164,7 +164,7 @@ Y solicitar las correcciones en Pincel Ekade enviando un email a `admision@iespu
 
 Los agrupamientos sirven para crear grupos dentro de un mismo curso de Campus (Moodle).
 Por ejemplo si impartimos una materia de igual forma en el A y el B. Podríamos crear un
-único curso Moodle para la materia y dentro podemos (si lo consideramos comnveniente) separar
+único curso Moodle para la materia y dentro podemos (si lo consideramos conveniente) separar
 a los alumnos en grupos separados.
 
 Veamos el proceso para crear agrupamientos:
