@@ -17,6 +17,7 @@ Profesores:
 * [Crear videoconferencia](#crear-videoconferencia)
 * [Matricular al alumnado](#matricular-al-alumnado)
 * [Agrupamientos](#agrupamientos)
+* [Copiar](#copiar)
 * [Foro novedades](#foro-novedades)
 
 ---
@@ -187,6 +188,28 @@ Podemos usar los agrupamientos para mantener las actividades separadas y tambié
 ![](images/moodle-restricciones.png)
 
 > En general, usaremos la configuración de restricciones cuando queremos limitar el acceso a alguno de los elementos de nuestro curso Moodle.
+
+## Copiar
+
+Hay varias herramientas para copiar en Moodle. La función de `importar` sirve para
+copiar en nuestro curso actual, trozos o partes de otro de nuestros cursos. Veamos los pasos:
+
+* Entrar en Moodle y vamos al curso destino. Esto es donde queremos copiar elementos.
+* Ir a `Adminsitración -> Importar`
+
+![](images/moodle-importar-01.png)
+
+* Se nos muestra un listado con todos nuestros cursos para que elijamos el curso origen. Esto es, desde donde queremos copiar. Pulsamos `Siguiente`
+
+![](images/moodle-importar-02.png)
+
+* Ahora vemos un listado con todos los tipos de elementos que podemos copiar. Elegimos los que queremos o todos y `Siguiente`.
+
+![](images/moodle-importar-03.png)
+
+* A continuación vemos un listado detallado con todos los elementos que podemos copiar del curso origen a nuestro curso destino. Marcaremos todos los que queramos copiar. Pulsar `Realizar importación`.
+
+![](images/moodle-importar-04.png)
 
 ## Foro Novedades
 
