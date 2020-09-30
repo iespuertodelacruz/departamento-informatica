@@ -1,18 +1,10 @@
 
-```
-Estado  : En construcción!
-Fecha UM: septiembre 2020
-```
-
 # Plan TIC
 
 Este documento es una guía con orientaciones y recomendaciones sobre el uso de
-herramientas digitales para adaptarnos a los siguientes escenarios:
-* Escenario presencial
-* Escenario mixto
-* Escenario a distancia
+herramientas digitales para adaptarnos a los escenarios presencial, mixto y a distancia.
 
-El objetivo es el de proporcionar una forma unificada para el centro, y responder
+El objetivo es el de proporcionar una forma de trabajo común para el centro, y responder
 a las necesidades de atención al alumnado, comunicación con las familias y apoyo
 a las incidencias del profesorado.
 
