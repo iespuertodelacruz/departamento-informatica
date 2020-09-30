@@ -194,7 +194,7 @@ Hay varias herramientas para copiar en Moodle. La función de `importar` sirve p
 copiar en nuestro curso actual, trozos o partes de otro de nuestros cursos. Veamos los pasos:
 
 * Entrar en Moodle y vamos al curso destino. Esto es donde queremos copiar elementos.
-* Ir a `Adminsitración -> Importar`
+* Ir a `Administración -> Importar`
 
 ![](images/moodle-importar-01.png)
 
