@@ -18,3 +18,7 @@ Para configurar la conexión Wifi de Medusa en GNU/Linux hay usar los siguientes
 | Contraseña              | Clave de Pincel/Ekade   |
 
 ![](images/medusa-wifi-linux.png)
+
+> Enlaces de interés:
+>
+> * [Usuario WIFI para dispositivos móviles](https://www3.gobiernodecanarias.org/educacion/cau_ce/servicios/web/noticias/usuario-wifi-dispositivos-moviles)
