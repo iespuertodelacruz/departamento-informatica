@@ -4,18 +4,17 @@
 # FreeRadius
 
 * [Servidor FreeRadius](#servidor-freeradius)
-* [Puntos de acceso](#puntos-de-acceso)
-* [Usuarios](#usuarios)
-* [Configurar PC](#configurar-pc)
+* [Puntos de acceso](#configurar-los-puntos-de-acceso)
+* [Configurar usuarios](#configurar-usuarios)
+* [Configurar Wifi del PC](#configurar-wifi-del-pc)
 
-## Servidor FreeRadius
+# Servidor FreeRadius
 
 Los archivos de configuración del servicio *FreeRadius* se encuentran en *Leela* bajo la ruta `/etc/freeradius`
 
 > Ojo porque en esta carpeta ni siquiera se puede navegar con un usuario "ordinario". Habría que hacer un `sudo -s` para poder acceder a ella, o bien ejecutar hasta los `cd` con `sudo`.
 
-
-## Puntos de acceso
+## Configurar los Puntos de acceso
 
 * El **modelo de punto de acceso** WIFI que estamos usando para el servicio Radius es: [TP-Link TL-WA901ND](https://www.tp-link.com/es/home-networking/access-point/tl-wa901nd/).
 * Valores por defecto del punto del acceso (*o bien reseteando*):
@@ -57,12 +56,14 @@ Parámetro | Valor
 
 * La configuración de los puntos de acceso (*clientes* en terminología Radius) se realiza en el fichero: `/etc/freeradius/client.conf`.
 * Aunque este fichero es bastante extenso lo importante son las secciones finales donde se definen los puntos de acceso que se utilizarán para la autenticación. Por cada punto de acceso habría que definir una sección como la siguiente:
-~~~
+
+```
 client <ip_del_punto_de_acceso> {
 	secret = <clave_para_validar_con_radius>
 	shortname = <nombre_corto_de_identificacion>
 }
-~~~
+```
+
 * Los puntos de acceso configurados hasta el momento son:
 
 Ubicación | IP | Nombre corto/SSID | MAC
@@ -72,7 +73,7 @@ Aula 109 | 172.19.0.2 | aula109 | 0C-80-63-D7-1E-52
 
 > Debería ser la 172.13.0.2 pero aún no se ha hecho la migración de la red del aula 103 y tiene el direccionamiento antiguo (del aula 108).
 
-## Usuarios
+## Configurar Usuarios
 
 * La configuración de los posibles usuarios se realiza en el fichero  `/etc/freeradius/users`.
 * Este fichero tiene tantas líneas como usuarios queramos habilitar para el servicio *Radius* y cada línea tiene el formato siguiente:
@@ -82,21 +83,17 @@ Aula 109 | 172.19.0.2 | aula109 | 0C-80-63-D7-1E-52
 . | Usuario | Contraseña
 --- | --- | ---
 **Profesorado** | `<DNI>` (con letra mayúscula) | `<correo electrónico>`
-**Alumnado** | `alu<num_expediente>` | `<CIAL>`
+**Alumnado** | `<DNI>` (con letra mayúscula) | `<CIAL>`
 
 > El CIAL es el primer número que aparece en la esquina superior izquierda de la tarjeta del alumnado. El número de expediente es el número que está justo debajo del CIAL y que suele tener 4 dígitos.
-* Los datos de alumnado en este formato se pueden obtener a través de TIFON.
+> Los datos de alumnado en este formato se pueden obtener a través de TIFON.
 
-**OJO**: Después de modificar los ficheros de configuración de FreeRadius no olvidarse de recargar la configuración con el siguiente comando:
-
-~~~console
-leela:~ sudo systemctl reload freeradius
-~~~
+* **OJO**: Después de modificar los ficheros de configuración de FreeRadius no olvidarse de recargar la configuración con el siguiente comando: `sudo systemctl reload freeradius`
 
 ---
-# Configurar PC
+# Configurar Wifi del PC
 
-Para configurar los PC's para acceder a la red Wifi de Freeradius hay los siguientes valores:
+Para configurar los PC's para acceder a la red Wifi de FreeRadius hay los siguientes valores:
 
 | Parámetro               | Valor                   |
 | ----------------------- | ----------------------- |
