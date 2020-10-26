@@ -12,7 +12,7 @@ Para configurar la conexión Wifi de Medusa en GNU/Linux hay usar los siguientes
 | ----------------------- | ----------------------- | ----------------------- |
 | Seguridad               | WPA2 Enterprise         | WPA2 Enterprise         |
 | Autenticación           | EAP (Protegido PEAP)    | EAP (Protegido PEAP)    |
-| Se necesita certificado | NO                      | Ninguno                 |
+| Se necesita certificado | NO                      | Np validar              |
 | Autenticación interna   | EAP-MSCHAP-v2           | Ninguna                 |
 | Usuario                 | Usuario de Pincel/Ekade | Usuario de Pincel/Ekade |
 | Contraseña              | Clave de Pincel/Ekade   | Clave de Pincel/Ekade   |
