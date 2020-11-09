@@ -4,7 +4,12 @@
 En lugar de tener usar una MV desde VirtualBox, esta guía explica como configurar una MV para que se inicie en la máquina real cargándose directamente
 desde GRUB.
 
-## Crear el fichero VHD
+* [1. Crear fichero VHD](#1-crear-fichero-vhd)
+* [2. Configurar GRUB](#2-configurar-grub)
+* [3. Instalar GRUB en Windows](#3-instalar-grub-en-windows)
+
+---
+# 1. Crear fichero VHD
 
 * Empezamos creando la MV en VirtualBox:
     * Eligir el almacenamiento de tipo VHD.
@@ -32,7 +37,7 @@ mount -n -t ext4 -o loop,rw,data=ordered /dev/mapper/${loop_pt} ${rootmnt}
 
 * Para regenerar el initrd hacemos: `update-initramfs -c -k  nombredelaversiondelnucleo`. Actualmente con Ubuntu LTS 20 y con el núcleo 5.4.0-52 nos quedaría lo siguiente: `update-initramfs -c -k 5.4.0-52-generic`
 
-## Configurar GRUB
+# 2. Configurar GRUB
 
 Modificar los ficheros de configuración de GRUB.
 * Para ello modificamos el fichero `/etc/grub.d/40_custom` con el siguiente contenido.
@@ -84,7 +89,7 @@ menuentry "VHD Ubuntu, Linux" {
 * Ahora hay que lanzar el siguiente comando para aplicar los cambios a GRUB: `update-grub2`.
 * Reiniciamos el equipo, y ahora nos debe aparecer una nueva entrada en el menú de GRUB para iniciar el SO dentro del fichero VHD.
 
-## Otro Ejemplo
+## 2.1 Otro Ejemplo
 
 Imaginemos que tenemos una partición de almacenamiento en un tercer disco donde ponemos todas nuestras máquinas virtuales.
 
@@ -117,3 +122,26 @@ menuentry "VHD Ubuntu, Linux" {
      initrd (loop,1)/boot/$inicio
 }
 ```
+
+# 3. Instalar GRUB en Windows
+
+Proceso para instalar GRUB en un ordenador con únicamente Windows.
+
+> Probado en una máquina virtual (MBR), ahora falta probar en un ordenador físico con EFI.
+
+* Iniciar la MV Windows con un CD-LIVE de GNU/Linux.
+* `mount /dev/sda2 /mnt`, montar la partición con Windows.
+* `cp -r /boot /mnt/boot`, copiar el directorio boot del live cd al disco duro de Windows.
+* Editar `/mnt/boot/grub.cfg` y poner nuestro menuentry.
+
+El menuentry para Windows es:
+
+```
+menuentry windows{
+ set root=(hd0,1)
+ chainloader +1
+ boot
+}
+```
+
+* `grub-install /dev/sda --boot-directory /mnt/boot`, ejecutar grub-install desde el CD-LIVE.
