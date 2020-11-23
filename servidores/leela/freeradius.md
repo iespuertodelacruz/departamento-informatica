@@ -101,7 +101,7 @@ Para configurar los PC's para acceder a la red Wifi de FreeRadius hay los siguie
 | Autenticación           | EAP (Protegido PEAP)    |
 | Se necesita certificado | NO                      |
 | Autenticación interna   | EAP-MSCHAP-v2           |
-| Usuario                 | Usuario de Pincel/Ekade |
-| Contraseña              | Clave de Pincel/Ekade   |
+| Usuario                 | Usuario                 |
+| Contraseña              | Clave                   |
 
 ![](images/freeradius-wifi.png)
