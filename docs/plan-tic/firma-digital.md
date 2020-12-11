@@ -29,7 +29,7 @@ Si no funcionan las opciones anteriores, también podemos firmar usando el progr
 AutoFirma por comandos. Veamos un ejemplo para firmar un fichero pdf:
 
 ```
-autofirma sign -i fichero.pdf -o firmado.pdf -store pkcs:/ruta/al/fichero.p12 -filter VARGAS -password CLAVEDELCERTIFICADO
+autofirma sign -i fichero.pdf -o firmado.pdf -store pkcs12:/ruta/al/fichero.p12 -filter VARGAS -password CLAVEDELCERTIFICADO
 ```
 
 Este comando puede muestrar varios warnings pero al final finaliza con éxito.
