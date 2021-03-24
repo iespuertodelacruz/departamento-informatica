@@ -7,7 +7,8 @@ acciones en dicho switch.
 ## Cambiar la asociación de los puertos a VLAN
 
 Entrar al switch:
-* `ssh user@IP-de-SOL`, Iniciar conexión SSH para entrar al switch.
+* `ssh usuario@172.20.255.1`, Iniciar conexión SSH para entrar al switch.
+  Este switch sólo tiene habilitado el acceso desde la VLAN20.
 * `Switch2960X# show running-config`, para consultar la configuración.
 
 Podemos ver cómo están asociados los puertos del switch a cada VLAN:
