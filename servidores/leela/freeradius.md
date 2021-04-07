@@ -14,6 +14,8 @@ Los archivos de configuración del servicio *FreeRadius* se encuentran en *Leela
 
 > Ojo porque en esta carpeta ni siquiera se puede navegar con un usuario "ordinario". Habría que hacer un `sudo -s` para poder acceder a ella, o bien ejecutar hasta los `cd` con `sudo`.
 
+Para consultar el estado del servicio `systemctl status freeradius`.
+
 ## Configurar los Puntos de acceso
 
 * El **modelo de punto de acceso** WIFI que estamos usando para el servicio Radius es: [TP-Link TL-WA901ND](https://www.tp-link.com/es/home-networking/access-point/tl-wa901nd/).
