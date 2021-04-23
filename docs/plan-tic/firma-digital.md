@@ -40,3 +40,5 @@ autofirma verify -i firmado.pdf
 ```
 
 Esto nos muestra una ventana donde se nos confirma que el documento está firmado correctamente.
+
+También se puede validar la firma en la página web https://valide.redsara.es.
