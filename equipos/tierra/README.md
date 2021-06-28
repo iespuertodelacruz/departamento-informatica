@@ -107,3 +107,7 @@ ethernet.cloned-mac-address=permanent
 dhclient -r
 dhclient
 ```
+
+> Enlaces de interés:
+> * https://fedoramagazine.org/randomize-mac-address-nm/
+> * https://www.cyberciti.biz/faq/howto-linux-renew-dhcp-client-ip-address/
