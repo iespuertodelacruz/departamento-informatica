@@ -89,3 +89,21 @@ Actualizar VirtualBox:
 | root     | /root          | Sólo para tareas sysadmin del sistema    |
 
 * Para "limpiar" los home de los usuarios, usamos ficheros tar con la copia de seguridad que se hizo nada más instalar el sistema.
+
+# 3. NetworkManager
+
+Configurar el NetworkManager para enviar MAC real al servidor DHCP.
+
+* Editar el fichero `/etc/NetworkManager/NetworkManager.conf`.
+* Incluir lo siguiente:
+```
+# Se elimina la posibilidad de generar una MAC aleatoria
+[connection]
+ethernet.cloned-mac-address=permanent
+```
+* `systemctl restart NetworkManager`, reiniciar el NerworManager.
+* Reiniciar el cliente dhcp para que solicite una nueva ip:
+```
+dhclient -r
+dhclient
+```
